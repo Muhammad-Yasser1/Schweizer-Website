@@ -1,0 +1,604 @@
+//Globals
+$red: #da202c;
+$inputbg: #f6f6f6;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	.container-fluid {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+}
+
+/*Start Navbar*/
+
+.navbar {
+	.container-fluid {
+		@media (max-width: 768px) {
+			width: 100% !important;
+		}
+	}
+	.navbar-toggler {
+		margin-right: 20px;
+		background: $red;
+		padding: 10px 18px;
+		;
+		font-size: 19px;
+		&-icon {
+			color: #fff;
+
+		}
+	}
+	padding: 0;
+	margin: 0;
+	&:after {
+		@media (max-width: 768px) {
+			display: none;
+		}
+		content: "";
+		z-index: -1;
+		position: absolute;
+		top: 47%;
+		left: 0;
+		background: #ddd;
+		height: 1px;
+		width: 100%;
+	}
+
+	.navbar-brand {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 280px;
+		@media (max-width: 768px) {
+			min-width: 180px;
+		}
+
+		.txt {
+			font-weight: 600;
+			color: #fff;
+			text-align: center;
+			font-size: 23px;
+			letter-spacing: 1px;
+			margin: 0;
+			padding: 0;
+			* {
+				display: block;
+			}
+		}
+	}
+	.row {
+		padding: 0;
+		margin: 0;
+		.upper {
+			display: flex;
+			justify-content: flex-end;
+			padding-left: 25px;
+			font-weight: 500;
+			font-size: 15px;
+			padding-top: 3px;
+			@media (max-width: 768px) {
+				margin-left: 40%;
+				margin-top: 20px;
+				justify-content: flex-end;
+			}
+			a {
+				padding-bottom: 3px;
+				color: #000;
+				&:hover {
+					color: $red;
+				}
+			}
+		}
+		.navbar-nav {
+			margin-top: 10px;
+			.nav-item {
+				margin-right: 5%;
+				padding: 5px 0;
+
+				@media (max-width: 790px) {
+					margin-right: 2%;
+				}
+				.nav-link {
+					position: relative;
+					top: 8px;
+					color: #000;
+					padding: 10px 20px;
+					font-size: 16px;
+					font-weight: 600;
+					letter-spacing: 1px;
+					@media (max-width: 768px) {
+						padding: 10px 0 10px 10px;
+					}
+					&:after {
+						content: "";
+						z-index: 1;
+						position: absolute;
+						bottom: -5px;
+						left: 0;
+						background: $red;
+						height: 3px;
+						width: 0;
+						transition: width .2s ease-in-out;
+					}
+					&:hover {
+						&:after {
+							width: 100%;
+						}
+
+						&:after {
+							@media (max-width: 992px) {
+								width: 35%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*End Navbar*/
+
+//Start Header
+header {
+	.panel {
+		position: relative;
+		&:after {
+			content: "";
+			background: rgba(0, 0, 0, .1);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+
+		.img-fluid {
+			position: relative;
+			z-index: 0;
+		}
+
+
+		.caption {
+			letter-spacing: 1px;
+			z-index: 1;
+			position: absolute;
+			top: 10%;
+			left: 5%;
+			font-size: 25px;
+			color: #fff;
+			width: 350px;
+			@media (max-width: 768px) {
+				font-size: 17px;
+			}
+		}
+
+
+		.left {
+			z-index: 2;
+			position: absolute;
+			top: 25%;
+			left: 5%;
+			border: 1px solid #f6f6f6;
+			background: #fff;
+			padding: 30px;
+			@media (max-width: 768px) {
+				top:27%;
+			}
+			h5 {
+				color: $red;
+				font-size: 23px;
+				@media (max-width: 768px) {
+					font-size: 16px;
+				}
+				.small {
+					color: #000;
+					font-size: 16px;
+					@media (max-width: 768px) {
+						font-size: 14px;
+					}
+				}
+			}
+			.options {
+				padding: 15px 0 0 0;
+				.nav-tabs {
+					margin-left: 15px;
+					border-bottom: 2px solid $red;
+					margin-bottom: 10px;
+					.nav-link {
+						color: $red;
+						border-radius: 0;
+						transition: all .2s ease-in-out;
+						font-size: 15px;
+						font-weight: 500;
+						@media (max-width: 768px) {
+							font-size: 13px;
+						}
+						&.active {
+							margin-bottom: -3px;
+							border: 1px solid $red;
+							background: $red;
+							color: #fff;
+							transform-origin: bottom;
+							transform: scale(1.05);
+						}
+					}
+				}
+				.tab-content {
+					#login {
+						padding: 20px 0;
+						/* The container */
+						label.container {
+							display: block;
+							position: relative;
+							padding-left: 30px;
+							margin-bottom: 12px;
+							cursor: pointer;
+							font-size: 13px;
+							-webkit-user-select: none;
+							-moz-user-select: none;
+							-ms-user-select: none;
+							user-select: none;
+
+
+							/* Hide the browser's default checkbox */
+							input {
+								position: absolute;
+								opacity: 0;
+								cursor: pointer;
+							}
+
+							/* Create a custom checkbox */
+							.checkmark {
+								position: absolute;
+								top: 2px;
+								left: 0;
+								height: 15px;
+								width: 15px;
+								background-color: #fff;
+								border: 2px solid $red;
+							}
+
+							/* On mouse-over, add a grey background color */
+							&:hover input ~ .checkmark {
+								background-color: #eee;
+							}
+
+							/* When the checkbox is checked, add a blue background */
+							input:checked ~ .checkmark {
+								background-color: $red;
+							}
+
+							/* Create the checkmark/indicator (hidden when not checked) */
+							.checkmark:after {
+								content: "";
+								position: absolute;
+								display: none;
+							}
+
+							/* Show the checkmark when checked */
+							input:checked ~ .checkmark:after {
+								display: block;
+							}
+
+							/* Style the checkmark/indicator */
+							.checkmark:after {
+								left: 6px;
+								top: 1px;
+								width: 7px;
+								height: 13px;
+								border: solid white;
+								border-width: 0 3px 3px 0;
+								-webkit-transform: rotate(45deg);
+								-ms-transform: rotate(45deg);
+								transform: rotate(45deg);
+							}
+						}
+
+						.form-group {
+							margin-bottom: 15px;
+							input {
+								border-radius: 0;
+								padding: 15px 15px 15px 50px;
+								background: $inputbg;
+								border: none;
+								&::placeholder {
+									font-size: 17px;
+								}
+							}
+
+							.icon {
+								position: absolute;
+								top: 24%;
+								left: 34px;
+								color: $red;
+							}
+						}
+
+						.rem {
+							margin: 15px 0;
+							font-size: 15px;
+							font-weight: 500;
+							letter-spacing: .5px;
+							.form-check {
+								padding-left: 16px;
+
+							}
+							.forget {
+								display: flex;
+								justify-content: flex-end;
+								a {
+								font-size: 13px;
+									color: $red;
+								}
+								@media (max-width:768px) {
+									justify-content: flex-start;
+
+								}
+							}
+						}
+
+						button {
+							background: $red;
+							border: 0;
+							font-size: 17px;
+							font-size: 15px;
+							padding: 10px 23px;
+							border-radius: 0;
+						}
+
+						.dont {
+							padding-top: 20px;
+							font-size: 15px;
+							font-weight: 500;
+							color: $red;
+							a {
+								color: #000;
+								&:hover {
+									color: $red;
+								}
+							}
+						}
+					}
+					#register {
+						p {
+							margin-bottom: 0;
+							padding-top: 10px;
+							font-size: 15px;
+						}
+						.sel {
+							position: relative;
+							margin-top: 20px;
+							.arrow {
+								position: absolute;
+								font-size: 13px;
+								color: $red;
+								left: 100px;
+								top: 18px;
+							}
+
+							select {
+								background: $inputbg;
+								letter-spacing: .5px;
+								padding: 18px 35px 18px 20px;
+								font-size: 13px;
+								border: none;
+								font-weight: 500;
+								-webkit-appearance: none;
+								&::-ms-expand {
+									display: none
+								}
+
+								option {
+									min-height: 50px;
+								}
+							}
+						}
+
+						.ins {
+							padding-top: 10px;
+							.col-md-6,
+							.col-md-3,
+							.col-9 {
+								padding: 10px 0 10px 16px;
+								&:after {
+									content: "*";
+									position: absolute;
+									right: 2%;
+									top: 15%;
+									color: $red;
+								}
+
+							}
+							input {
+								position: relative;
+								background: $inputbg;
+								padding: 10px 20px;
+								border: none;
+								&::placeholder {
+									content: "*";
+									color: #777;
+									font-size: 13px;
+									font-weight: 500;
+								}
+
+								&[type="submit"] {
+									background: $red;
+									color: #fff;
+									font-weight: 500;
+									letter-spacing: .5px;
+									padding: 10px 20px;
+									border-radius: 0;
+									font-size: 13px;
+
+								}
+
+							}
+
+							label.container {
+								display: block;
+								position: relative;
+								padding-left: 30px;
+								font-weight: 500;
+								margin-bottom: 12px;
+								cursor: pointer;
+								font-size: 13px;
+								-webkit-user-select: none;
+								-moz-user-select: none;
+								-ms-user-select: none;
+								user-select: none;
+
+
+								/* Hide the browser's default checkbox */
+								input {
+									position: absolute;
+									opacity: 0;
+									cursor: pointer;
+								}
+
+								/* Create a custom checkbox */
+								.checkmark {
+									position: absolute;
+									top: 8px;
+									left: 5px;
+									height: 15px;
+									width: 15px;
+									background-color: #fff;
+									border: 2px solid $red;
+								}
+
+								/* On mouse-over, add a grey background color */
+								&:hover input ~ .checkmark {
+									background-color: #eee;
+								}
+
+								/* When the checkbox is checked, add a blue background */
+								input:checked ~ .checkmark {
+									background-color: $red;
+								}
+
+								/* Create the checkmark/indicator (hidden when not checked) */
+								.checkmark:after {
+									content: "";
+									position: absolute;
+									display: none;
+								}
+
+								/* Show the checkmark when checked */
+								input:checked ~ .checkmark:after {
+									display: block;
+								}
+
+								/* Style the checkmark/indicator */
+								.checkmark:after {
+									left: 3px;
+									top: -2px;
+									width: 6px;
+									height: 12px;
+									border: solid white;
+									border-width: 0 3px 3px 0;
+									-webkit-transform: rotate(45deg);
+									-ms-transform: rotate(45deg);
+									transform: rotate(45deg);
+								}
+							}
+
+
+
+						}
+					}
+				}
+			}
+		}
+
+
+	}
+
+}
+
+//End Header
+//Start Footer
+footer {
+	position: absolute;
+	left: 0;
+	border-top: 1px solid #eee;
+	padding-top: 30px;
+	@media (max-width: 768px) {}
+	.logo {
+		text-decoration: none;
+		.txt {
+
+			padding: 0;
+			margin-right: 10px;
+			.col-12 {
+				font-weight: bold;
+				font-size: 22px;
+				letter-spacing: 1px;
+				span {
+					font-weight: normal;
+					font-size: 15px;
+					letter-spacing: 0
+				}
+			}
+		}
+	}
+	h6 {
+		font-size: 18px;
+	}
+
+	a {
+		padding: 5px 0;
+		font-size: 14px;
+		color: #000;
+		&:hover {
+			color: $red;
+		}
+	}
+	
+	
+	.info{
+		.row{
+			padding-left: 15px;
+		}
+	}
+	
+	.contact {
+		@media (max-width: 768px) {
+			display: flex;
+		}
+		a {
+			font-size: 19px;
+			margin-left: 2%;
+			display: inline-flex;
+			justify-content: center;
+			border-radius: 50%;
+			padding: 10px;
+			border: 1px solid $red;
+			text-decoration: none;
+			color: $red;
+			transition: all .3s ease-in-out;
+			&:first-child {
+				margin: 0;
+				padding: 10px 15px;
+			}
+			&:last-child,
+			&:nth-last-of-type(2) {
+				padding: 10px 12px;
+			}
+			&:hover {
+				background: $red;
+				color: #fff;
+			}
+		}
+	}
+}
+
+//End Footer
+.btn,
+input {
+	box-shadow: none !important;
+	outline: none;
+}

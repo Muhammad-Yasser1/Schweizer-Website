@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+body {
+  font-family: 'Roboto', sans-serif; }
+  body .container-fluid {
+    padding-left: 4%;
+    padding-right: 4%; }
+
+/*Start Navbar*/
+.navbar {
+  padding: 0;
+  margin: 0; }
+  @media (max-width: 768px) {
+    .navbar .container-fluid {
+      width: 100% !important; } }
+  .navbar .navbar-toggler {
+    margin-right: 20px;
+    background: #da202c;
+    padding: 10px 18px;
+    font-size: 19px; }
+    .navbar .navbar-toggler-icon {
+      color: #fff; }
+  .navbar:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    background: #ddd;
+    height: 1px;
+    width: 100%; }
+    @media (max-width: 768px) {
+      .navbar:after {
+        display: none; } }
+  .navbar .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 280px; }
+    @media (max-width: 768px) {
+      .navbar .navbar-brand {
+        min-width: 180px; } }
+    .navbar .navbar-brand .txt {
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      font-size: 23px;
+      letter-spacing: 1px;
+      margin: 0;
+      padding: 0; }
+      .navbar .navbar-brand .txt * {
+        display: block; }
+  .navbar .row {
+    padding: 0;
+    margin: 0; }
+    .navbar .row .upper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding-left: 25px;
+      font-weight: 500;
+      font-size: 15px;
+      padding-top: 3px; }
+      @media (max-width: 768px) {
+        .navbar .row .upper {
+          margin-left: 40%;
+          margin-top: 20px;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; } }
+      .navbar .row .upper a {
+        padding-bottom: 3px;
+        color: #000; }
+        .navbar .row .upper a:hover {
+          color: #da202c; }
+    .navbar .row .navbar-nav {
+      margin-top: 10px; }
+      .navbar .row .navbar-nav .nav-item {
+        margin-right: 5%;
+        padding: 5px 0; }
+        @media (max-width: 790px) {
+          .navbar .row .navbar-nav .nav-item {
+            margin-right: 2%; } }
+        .navbar .row .navbar-nav .nav-item .nav-link {
+          position: relative;
+          top: 8px;
+          color: #000;
+          padding: 10px 20px;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 1px; }
+          @media (max-width: 768px) {
+            .navbar .row .navbar-nav .nav-item .nav-link {
+              padding: 10px 0 10px 10px; } }
+          .navbar .row .navbar-nav .nav-item .nav-link:after {
+            content: "";
+            z-index: 1;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            background: #da202c;
+            height: 3px;
+            width: 0;
+            -webkit-transition: width .2s ease-in-out;
+            transition: width .2s ease-in-out; }
+          .navbar .row .navbar-nav .nav-item .nav-link:hover:after {
+            width: 100%; }
+          @media (max-width: 992px) {
+            .navbar .row .navbar-nav .nav-item .nav-link:hover:after {
+              width: 35%; } }
+
+/*End Navbar*/
+header .panel {
+  position: relative; }
+  header .panel:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  header .panel .img-fluid {
+    position: relative;
+    z-index: 0; }
+  header .panel .caption {
+    letter-spacing: 1px;
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 25px;
+    color: #fff;
+    width: 350px; }
+    @media (max-width: 768px) {
+      header .panel .caption {
+        font-size: 17px; } }
+  header .panel .left {
+    z-index: 2;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    border: 1px solid #f6f6f6;
+    background: #fff;
+    padding: 30px; }
+    @media (max-width: 768px) {
+      header .panel .left {
+        top: 27%; } }
+    header .panel .left h5 {
+      color: #da202c;
+      font-size: 23px; }
+      @media (max-width: 768px) {
+        header .panel .left h5 {
+          font-size: 16px; } }
+      header .panel .left h5 .small {
+        color: #000;
+        font-size: 16px; }
+        @media (max-width: 768px) {
+          header .panel .left h5 .small {
+            font-size: 14px; } }
+    header .panel .left .options {
+      padding: 15px 0 0 0; }
+      header .panel .left .options .nav-tabs {
+        margin-left: 15px;
+        border-bottom: 2px solid #da202c;
+        margin-bottom: 10px; }
+        header .panel .left .options .nav-tabs .nav-link {
+          color: #da202c;
+          border-radius: 0;
+          -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+          font-size: 15px;
+          font-weight: 500; }
+          @media (max-width: 768px) {
+            header .panel .left .options .nav-tabs .nav-link {
+              font-size: 13px; } }
+          header .panel .left .options .nav-tabs .nav-link.active {
+            margin-bottom: -3px;
+            border: 1px solid #da202c;
+            background: #da202c;
+            color: #fff;
+            -webkit-transform-origin: bottom;
+                    transform-origin: bottom;
+            -webkit-transform: scale(1.05);
+                    transform: scale(1.05); }
+      header .panel .left .options .tab-content #login {
+        padding: 20px 0;
+        /* The container */ }
+        header .panel .left .options .tab-content #login label.container {
+          display: block;
+          position: relative;
+          padding-left: 30px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 13px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          /* Hide the browser's default checkbox */
+          /* Create a custom checkbox */
+          /* On mouse-over, add a grey background color */
+          /* When the checkbox is checked, add a blue background */
+          /* Create the checkmark/indicator (hidden when not checked) */
+          /* Show the checkmark when checked */
+          /* Style the checkmark/indicator */ }
+          header .panel .left .options .tab-content #login label.container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer; }
+          header .panel .left .options .tab-content #login label.container .checkmark {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: #fff;
+            border: 2px solid #da202c; }
+          header .panel .left .options .tab-content #login label.container:hover input ~ .checkmark {
+            background-color: #eee; }
+          header .panel .left .options .tab-content #login label.container input:checked ~ .checkmark {
+            background-color: #da202c; }
+          header .panel .left .options .tab-content #login label.container .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none; }
+          header .panel .left .options .tab-content #login label.container input:checked ~ .checkmark:after {
+            display: block; }
+          header .panel .left .options .tab-content #login label.container .checkmark:after {
+            left: 6px;
+            top: 1px;
+            width: 7px;
+            height: 13px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+        header .panel .left .options .tab-content #login .form-group {
+          margin-bottom: 15px; }
+          header .panel .left .options .tab-content #login .form-group input {
+            border-radius: 0;
+            padding: 15px 15px 15px 50px;
+            background: #f6f6f6;
+            border: none; }
+            header .panel .left .options .tab-content #login .form-group input::-webkit-input-placeholder {
+              font-size: 17px; }
+            header .panel .left .options .tab-content #login .form-group input:-ms-input-placeholder {
+              font-size: 17px; }
+            header .panel .left .options .tab-content #login .form-group input::-ms-input-placeholder {
+              font-size: 17px; }
+            header .panel .left .options .tab-content #login .form-group input::placeholder {
+              font-size: 17px; }
+          header .panel .left .options .tab-content #login .form-group .icon {
+            position: absolute;
+            top: 24%;
+            left: 34px;
+            color: #da202c; }
+        header .panel .left .options .tab-content #login .rem {
+          margin: 15px 0;
+          font-size: 15px;
+          font-weight: 500;
+          letter-spacing: .5px; }
+          header .panel .left .options .tab-content #login .rem .form-check {
+            padding-left: 16px; }
+          header .panel .left .options .tab-content #login .rem .forget {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end; }
+            header .panel .left .options .tab-content #login .rem .forget a {
+              font-size: 13px;
+              color: #da202c; }
+            @media (max-width: 768px) {
+              header .panel .left .options .tab-content #login .rem .forget {
+                -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                        justify-content: flex-start; } }
+        header .panel .left .options .tab-content #login button {
+          background: #da202c;
+          border: 0;
+          font-size: 17px;
+          font-size: 15px;
+          padding: 10px 23px;
+          border-radius: 0; }
+        header .panel .left .options .tab-content #login .dont {
+          padding-top: 20px;
+          font-size: 15px;
+          font-weight: 500;
+          color: #da202c; }
+          header .panel .left .options .tab-content #login .dont a {
+            color: #000; }
+            header .panel .left .options .tab-content #login .dont a:hover {
+              color: #da202c; }
+      header .panel .left .options .tab-content #register p {
+        margin-bottom: 0;
+        padding-top: 10px;
+        font-size: 15px; }
+      header .panel .left .options .tab-content #register .sel {
+        position: relative;
+        margin-top: 20px; }
+        header .panel .left .options .tab-content #register .sel .arrow {
+          position: absolute;
+          font-size: 13px;
+          color: #da202c;
+          left: 100px;
+          top: 18px; }
+        header .panel .left .options .tab-content #register .sel select {
+          background: #f6f6f6;
+          letter-spacing: .5px;
+          padding: 18px 35px 18px 20px;
+          font-size: 13px;
+          border: none;
+          font-weight: 500;
+          -webkit-appearance: none; }
+          header .panel .left .options .tab-content #register .sel select::-ms-expand {
+            display: none; }
+          header .panel .left .options .tab-content #register .sel select option {
+            min-height: 50px; }
+      header .panel .left .options .tab-content #register .ins {
+        padding-top: 10px; }
+        header .panel .left .options .tab-content #register .ins .col-md-6,
+        header .panel .left .options .tab-content #register .ins .col-md-3,
+        header .panel .left .options .tab-content #register .ins .col-9 {
+          padding: 10px 0 10px 16px; }
+          header .panel .left .options .tab-content #register .ins .col-md-6:after,
+          header .panel .left .options .tab-content #register .ins .col-md-3:after,
+          header .panel .left .options .tab-content #register .ins .col-9:after {
+            content: "*";
+            position: absolute;
+            right: 2%;
+            top: 15%;
+            color: #da202c; }
+        header .panel .left .options .tab-content #register .ins input {
+          position: relative;
+          background: #f6f6f6;
+          padding: 10px 20px;
+          border: none; }
+          header .panel .left .options .tab-content #register .ins input::-webkit-input-placeholder {
+            content: "*";
+            color: #777;
+            font-size: 13px;
+            font-weight: 500; }
+          header .panel .left .options .tab-content #register .ins input:-ms-input-placeholder {
+            content: "*";
+            color: #777;
+            font-size: 13px;
+            font-weight: 500; }
+          header .panel .left .options .tab-content #register .ins input::-ms-input-placeholder {
+            content: "*";
+            color: #777;
+            font-size: 13px;
+            font-weight: 500; }
+          header .panel .left .options .tab-content #register .ins input::placeholder {
+            content: "*";
+            color: #777;
+            font-size: 13px;
+            font-weight: 500; }
+          header .panel .left .options .tab-content #register .ins input[type="submit"] {
+            background: #da202c;
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: .5px;
+            padding: 10px 20px;
+            border-radius: 0;
+            font-size: 13px; }
+        header .panel .left .options .tab-content #register .ins label.container {
+          display: block;
+          position: relative;
+          padding-left: 30px;
+          font-weight: 500;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 13px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          /* Hide the browser's default checkbox */
+          /* Create a custom checkbox */
+          /* On mouse-over, add a grey background color */
+          /* When the checkbox is checked, add a blue background */
+          /* Create the checkmark/indicator (hidden when not checked) */
+          /* Show the checkmark when checked */
+          /* Style the checkmark/indicator */ }
+          header .panel .left .options .tab-content #register .ins label.container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer; }
+          header .panel .left .options .tab-content #register .ins label.container .checkmark {
+            position: absolute;
+            top: 8px;
+            left: 5px;
+            height: 15px;
+            width: 15px;
+            background-color: #fff;
+            border: 2px solid #da202c; }
+          header .panel .left .options .tab-content #register .ins label.container:hover input ~ .checkmark {
+            background-color: #eee; }
+          header .panel .left .options .tab-content #register .ins label.container input:checked ~ .checkmark {
+            background-color: #da202c; }
+          header .panel .left .options .tab-content #register .ins label.container .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none; }
+          header .panel .left .options .tab-content #register .ins label.container input:checked ~ .checkmark:after {
+            display: block; }
+          header .panel .left .options .tab-content #register .ins label.container .checkmark:after {
+            left: 3px;
+            top: -2px;
+            width: 6px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+footer {
+  position: absolute;
+  left: 0;
+  border-top: 1px solid #eee;
+  padding-top: 30px; }
+  footer .logo {
+    text-decoration: none; }
+    footer .logo .txt {
+      padding: 0;
+      margin-right: 10px; }
+      footer .logo .txt .col-12 {
+        font-weight: bold;
+        font-size: 22px;
+        letter-spacing: 1px; }
+        footer .logo .txt .col-12 span {
+          font-weight: normal;
+          font-size: 15px;
+          letter-spacing: 0; }
+  footer h6 {
+    font-size: 18px; }
+  footer a {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #000; }
+    footer a:hover {
+      color: #da202c; }
+  footer .info .row {
+    padding-left: 15px; }
+  @media (max-width: 768px) {
+    footer .contact {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  footer .contact a {
+    font-size: 19px;
+    margin-left: 2%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #da202c;
+    text-decoration: none;
+    color: #da202c;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    footer .contact a:first-child {
+      margin: 0;
+      padding: 10px 15px; }
+    footer .contact a:last-child, footer .contact a:nth-last-of-type(2) {
+      padding: 10px 12px; }
+    footer .contact a:hover {
+      background: #da202c;
+      color: #fff; }
+
+.btn,
+input {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none; }
+
+/*# sourceMappingURL=login.css.map */

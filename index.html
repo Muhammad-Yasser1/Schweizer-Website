@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<title>SCHWEIZER</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Andreas">
+	<link rel="shortcut icon" href="imgs/logo-foot.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!--	Start Navabar-->
+	<nav class="navbar navbar-expand-md navbar-light">
+		<div class="container-fluid">
+			<a class="navbar-brand py-3 row bg-danger" href="index.html" style="padding-right: 15px;">
+					<span class="swis col-4 p-1 pr-0"><img src="imgs/logo.png" class="img-fluid" alt="swiss"></span>
+					<span class="txt col-7 small">SCHWEIZER.<span style="font-size: 16px;font-weight: normal">FIRMENADRESSEN</span></span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				 <span class="navbar-toggler-icon fas fa-align-justify"></span>
+         </button>
+			<div class="row pl-2 col-9">
+
+				<div class="upper col-11">
+					<i class="text-danger far fa-user" style="font-size: 22px"></i>&nbsp;&nbsp;
+					<a href="login/login.html"> LOGIN </a>&nbsp; / &nbsp;<a href="login/login.html#register" id="reg">REGISTER</a>
+				</div>
+				<div class="collapse col-12 navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="faq/faq.html">FAQ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact/contact.html">CONTACT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about/about.html">ABOUT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--	End Navabar-->
+
+
+	<!--	Start header-->
+	<header class="mt-4">
+
+		<div class="container-fluid">
+			<div class="panel">
+				<img src="imgs/panel2.png" class="w-100" alt="swissPanel">
+				<div class="caption">EXPLORE THE BEST COMPANIES BASED IN SWITZERLAND</div>
+				<div class="row">
+					<div class="container-fluid">
+
+						<div class="col-sm-8 col-lg-6 col-12 left">
+							<h5>
+								FIND COMPANY ADDRESSES IN SCHWEIZER
+								<span class="small d-block" style="line-height: 1.5;font-size: 15px;width: 80%">Search by Branche, Betriebsgröße und Merkmale, Region, Führungskräfte/Entscheider, Gastronomie Daten</span>
+							</h5>
+
+							<div class="options row">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs col-12">
+									<li class="nav-item">
+										<a class="nav-link active" data-toggle="tab" href="#home">Branche</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#bet">Betriebsgröße und Merkmale</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#regi">Region / Gebiet</a>
+									</li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content col-12">
+									<div class="tab-pane fade container active show" id="home">
+										<div class="conchk" >
+											<span class="chevs" data-target="#ch1" data-toggle="collapse">
+												<i class="fas fa-chevron-right"  id="ri"></i><i class="fas fa-chevron-down" id="dow"></i>
+											</span>
+											<label>Ämter und Behörden<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch1" class="collapse">
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv1" data-toggle="collapse">
+														<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+													<label>Arbeitsämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv1" class="collapse">
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv3" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Arbeitsämter, kantonale und kommunale<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlvlv1" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv3" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Arbeitsinspektorate<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlvlv2" class="collapse"></div>
+														</div>
+													</div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv2" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+													<label>Bauämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv2" class="collapse">
+														<div class="conchk">
+															<span class="chevs" data-target="#chlvlv3" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Bauämter, kantonale<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlvlv3" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlvlv4" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Hochbauämter<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlvlv4" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlvlv5" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Stadt-, Kreis- und Amtsbauämter<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlvlv5" class="collapse">
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlvlvlv1" data-toggle="collapse"><i class="fas-fa-minus"></i></span>
+																	<label>Stadt-, Kreis- und Amtsbauämter<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlvlvlv1" class="collapse"></div>
+																</div>
+															</div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlvlv6" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Telefon- und Telegraphenbauämter<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlvlv6" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlvlv7" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Tiefbauämter<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlvlv7" class="collapse">
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlvlvlv2" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Stadt-, Kreis- und Amtsbauämter<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlvlvlv2" class="collapse"></div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlvlvlv3" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Stadt-, Kreis- und Amtsbauämter<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlvlvlv3" class="collapse"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv3" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Betreibungsämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv3" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv4" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Bezirksämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv4" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv5" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Brandschutz- und Rettungsämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv5" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv6" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+													<label>Bundesämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv6" class="collapse">
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv61" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Bundesverwaltungen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv61" class="collapse"></div>
+														</div>
+													</div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv7" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Denkmalschutzämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv7" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv8" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+													<label>Diplomatische Vertretungen und Botschaften<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv8" class="collapse">
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv81" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Botschaften<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv81" class="collapse"></div>
+														</div>
+													</div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv9" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Eichämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv9" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv10" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Einwohnerkontrolle<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv10" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv11" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Finanzämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv11" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv12" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+													<label>Forstämter und Forstverwaltungen<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv12" class="collapse">
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv131" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Kantonale Forstämter<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv131" class="collapse"></div>
+														</div>
+													</div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv13" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Fremdenverkehrsämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv13" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv14" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+													<label>Friedhofsämter und Gartenbauämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv14" class="collapse">
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv141" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Friedhofsämter<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv141" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv142" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Gartenbauämter<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv142" class="collapse"></div>
+														</div>
+													</div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv15" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Fürsorgeämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv15" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv16" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+													<label>Gerichte<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv16" class="collapse">
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv161" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Arbeitsgerichte<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv161" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv162" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Bezirksgerichte<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv162" class="collapse"></div>
+														</div>
+													</div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv17" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+													<label>Gesundheitsbehörden<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv17" class="collapse">
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv171" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Gesundheitsämter<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv171" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv172" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Veterinärämter<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv172" class="collapse"></div>
+														</div>
+													</div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv18" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Gewässerschutzämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv18" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv19" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Grenzkontrollstellen<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv19" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv20" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Grundbuchämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv20" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv21" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Internationale Organisation<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv21" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv22" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Jugendämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv22" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv23" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Kantonsämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv23" class="collapse"></div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv24" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+													<label>Kommunale Einrichtungen<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv24" class="collapse">
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv241" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Allgemeinbildende Schulen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv241" class="collapse">
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv241a1" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Grund- und Hauptschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv241a1" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv241a11" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Grundschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv241a11" class="collapse"></div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv241a12" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Kindergärten<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv241a12" class="collapse"></div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv241a13" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																			<label>Volksschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv241a13" class="collapse">
+																				<div class="conchk">
+																					<span class="chevs" data-target="#chlv241a14" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																					<label>Primarschulen<input type="checkbox"><span class="checkmark"></span></label>
+																					<div id="chlv241a14" class="collapse"></div>
+																				</div>
+																				<div class="conchk">
+																					<span class="chevs" data-target="#chlv241a15" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																					<label>Sekundar-, Bezirks- und Realschulen<input type="checkbox"><span class="checkmark"></span></label>
+																					<div id="chlv241a15" class="collapse">
+																						<div class="conchk">
+																							<span class="chevs" data-target="#chlv241a16" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																							<label>Realschulen<input type="checkbox"><span class="checkmark"></span></label>
+																							<div id="chlv241a16" class="collapse"></div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv242" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Archive<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv242" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv243" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Berufliche Schulen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv243" class="collapse">
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a2" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Bäcker- und Konditorschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a2" class="collapse"></div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a3" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Baugewerbeschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a3" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv243a3s1" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																			<label>Baugewerbeschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv243a3s1" class="collapse">
+																				<div class="conchk">
+																					<span class="chevs" data-target="#chlv243a3s2" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																					<label>Maler-, Tapezierer- und Raumausstatterschulen<input type="checkbox"><span class="checkmark"></span></label>
+																					<div id="chlv243a3s2" class="collapse">
+																						<div class="conchk">
+																							<span class="chevs" data-target="#chlv243a3s2sa" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																							<label>Malerschulen<input type="checkbox"><span class="checkmark"></span></label>
+																							<div id="chlv243a3s2sa" class="collapse"></div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a4" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Coiffeur- und Kosmetikschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a4" class="collapse"></div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a5" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Elektronikschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a5" class="collapse"></div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a6" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Handelsschulen und kaufmännische Schulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a6" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv243a6s1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Handelsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv243a6s1" class="collapse"></div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv243a6s2" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Sekretärinnenschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv243a2s2" class="collapse"></div>
+																		</div>
+																	</div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a7" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Hauswirtschaftsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a7" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv243a6s1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Handelsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv243a7s1" class="collapse"></div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv243a6s2" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Sekretärinnenschulen<input type="checkbox"><span class="checkmark"></span></label>
+																		</div>
+																	</div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a8" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Land- und Forstwirtschaftsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a8" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv243a8s1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Handelsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv243a8s1" class="collapse"></div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv243a8s3" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Handelsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv243a8s3" class="collapse"></div>
+																		</div>
+																	</div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a9" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Landwirtschaftliche Berufsfachschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a9" class="collapse"></div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a10" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Medizinische Berufsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a11" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Mode- und Schneiderschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a11" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv243a11s1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Schneiderschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv243a11s1" class="collapse"></div>
+																		</div>
+																	</div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a12" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Steinmetz- und Steinbildhauerschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a12" class="collapse"></div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a13" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Textilschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a13" class="collapse"></div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a14" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Tierhaltungs- und Tierzuchtschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a14" class="collapse"></div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv243a15" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Wirtschafts- und Verwaltungsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv243a15" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv243a15s1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Verwaltungsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv243a15s1" class="collapse"></div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv243a15s2" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Wirtschaftsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv243a15s2" class="collapse"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv244" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Bibliotheken und Leihbüchereien<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv244" class="collapse">
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv244a1" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Bibliotheken<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv244a1" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv244a1s1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Amtsbibliotheken<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv244a1s1" class="collapse">
+
+																			</div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv244a1s2" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Schulbibliotheken<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv244a1s2" class="collapse">
+
+																			</div>
+																			<div class="conchk">
+																				<span class="chevs" data-target="#chlv244a1s3" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																				<label>Städtische- und Gemeindebibliotheken<input type="checkbox"><span class="checkmark"></span></label>
+																				<div id="chlv244as3" class="collapse">
+
+																				</div>
+																			</div>
+																			<div class="conchk">
+																				<span class="chevs" data-target="#chlv244a1s4" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																				<label>Universitäts- und Hochschulbibliotheken<input type="checkbox"><span class="checkmark"></span></label>
+																				<div id="chlv244a1s4" class="collapse">
+																					<div class="conchk">
+																						<span class="chevs" data-target="#chlv244a1s4s1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																						<label>Pädagogische Hochschulbibliotheken<input type="checkbox"><span class="checkmark"></span></label>
+																						<div id="chlv244a1s4s1" class="collapse">
+
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="conchk">
+																				<span class="chevs" data-target="#chlv244a1s5" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																				<label>Wissenschaftliche Bibliotheken<input type="checkbox"><span class="checkmark"></span></label>
+																				<div id="chlv244a1s5" class="collapse">
+
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv245" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Botanische Gärten<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv245" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv246" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Chöre<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv246" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv247" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Fachschulen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv247" class="collapse">
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv247a1" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Feuerwehr- und Polizeischulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv247a1" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv247a1s1" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																			<label>Polizeischulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv247a1s1" class="collapse"></div>
+																		</div>
+																	</div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv247asd" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Frauenfachschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv247asd" class="collapse"></div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv247sad" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Hotelfachschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv247sad" class="collapse"></div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv247q1" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Medizinische Fachschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv247q1" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv247q1s1" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																			<label>Atem-, Joga- und Gymnastikschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv247q1s1" class="collapse">
+																				<div class="conchk">
+																					<span class="chevs" data-target="#chlv247q1s1a1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																					<label>Atemschulen<input type="checkbox"><span class="checkmark"></span></label>
+																					<div id="chlv247q1s1a1" class="collapse"></div>
+																				</div>
+																				<div class="conchk">
+																					<span class="chevs" data-target="#chlv247q1s1a2" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																					<label>Gymnastikschulen<input type="checkbox"><span class="checkmark"></span></label>
+																					<div id="chlv247q1s1a2" class="collapse"></div>
+																				</div>
+																				<div class="conchk">
+																					<span class="chevs" data-target="#chlv247q1s1a3" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																					<label>Jogaschulen<input type="checkbox"><span class="checkmark"></span></label>
+																					<div id="chlv247q1s1a3" class="collapse"></div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv247q1s2" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Gesundheitsschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv247q1s2" class="collapse"></div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv247q1s3" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																			<label>Heilpädagogische, sozialpädagogische und Beschäftigungstherapieschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv247q1s3" class="collapse">
+																				<div class="conchk">
+																					<span class="chevs" data-target="#chlv247q1s3a1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																					<label>Gymnastikschulen<input type="checkbox"><span class="checkmark"></span></label>
+																					<div id="chlv247q1s3a1" class="collapse"></div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv247q1s4" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Kindergärtnerinnen- und Kinderpflegerinnenschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv247q1s4" class="collapse"></div>
+																		</div>
+																	</div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv247a2ss" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																	<label>Schulen für Geistes- und Kunstleben<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv247a2ss" class="collapse">
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv247a2s1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Ballettschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv247a2s1" class="collapse"></div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv247a2s2" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Kunsthandwerkschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv247a2s2" class="collapse"></div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv247a2s3" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+																			<label>Musik- und Gesangschulen und Musiklehrer<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv247a2s3" class="collapse">
+																				<div class="conchk">
+																					<span class="chevs" data-target="#chlv247a2s3s1" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																					<label>Gesangschulen<input type="checkbox"><span class="checkmark"></span></label>
+																					<div id="chlv247a2s3s1" class="collapse"></div>
+																				</div>
+																				<div class="conchk">
+																					<span class="chevs" data-target="#chlv247a2s3s2" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																					<label>Musikschulen<input type="checkbox"><span class="checkmark"></span></label>
+																					<div id="chlv247a2s3s2" class="collapse"></div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="conchk">
+																			<span class="chevs" data-target="#chlv247a2s4" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																			<label>Schauspielschulen<input type="checkbox"><span class="checkmark"></span></label>
+																			<div id="chlv247a2s4" class="collapse"></div>
+																		</div>
+																	</div>
+																</div>
+																<div class="conchk">
+																	<span class="chevs" data-target="#chlv247a3" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+																	<label>Technikerschulen<input type="checkbox"><span class="checkmark"></span></label>
+																	<div id="chlv247a3" class="collapse"></div>
+																</div>
+															</div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv248" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Freibäder<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv248" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv249" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Gemeindehallen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv249" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2410" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Hallenbäder<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2410" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2411" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Heime<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2411" class="collapse">
+
+															</div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2412" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Hochschulen und Universitäten<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2412" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2413" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Kehrichtverbrennungsanlagen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2413" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2414" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Kläranlagen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2414" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2415" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Krankenhäuser<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2415" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2416" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Kulturelle Einrichtungen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2416" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2417" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Kunstgalerien und Museen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2417" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2418" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Museen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2418" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2419" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Orchester<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2419" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2420" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Schlachthöfe<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2420" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2421" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Sonder- und Hilfsschulen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2421" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2422" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Spielcasinos<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2422" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2423" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Sporthallen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2423" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2424" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Sportstadien<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2424" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2425" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Städtische- und Gemeindebibliotheken<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2425" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2426" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Sternwarten<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2426" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2427" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+															<label>Theater, Opern- und Konzerthäuser<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2427" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2428" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Theaterdirektionen<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2428" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2429" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Veranstaltungsorganisation<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2429" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2430" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Wasserwerke<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2430" class="collapse"></div>
+														</div>
+														<div class="conchk">
+															<span class="chevs" data-target="#chlv2431" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+															<label>Zoologische Gärten<input type="checkbox"><span class="checkmark"></span></label>
+															<div id="chlv2431" class="collapse"></div>
+														</div>
+													</div>
+												</div>
+												<div class="conchk">
+													<span class="chevs" data-target="#chlv25" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+													<label>Konkursämter<input type="checkbox"><span class="checkmark"></span></label>
+													<div id="chlv25" class="collapse"></div>
+												</div>
+											</div>
+										</div>
+
+										<div class="conchk">
+											<span class="chevs" data-target="#ch2" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Ärzte, Gesundheitswesen und Sozialwesen<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch2" class="collapse">BODY2</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch3" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Banken, Versicherungen und Finanzdienstleister<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch3" class="collapse">BODY3</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch4" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Bauelemente, Baustoffe und Bauinstallationen Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch4" class="collapse">BODY4</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch5" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Baugewerbe<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch5" class="collapse">BODY5</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch6" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Bauunternehmen und Bauhandwerk<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch6" class="collapse">BODY6</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch7" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Bekleidung, Leder und Textil Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch7" class="collapse">BODY7</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch8" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Bergbau, Energie und Landwirtschaft<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch8" class="collapse">BODY8</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch9" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Bergbau, Mineralöl-, Steine und Erdengewinnung Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch9" class="collapse">BODY9</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch10" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Bürobedarf, Büroeinrichtungen und Bürotechnik Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch10" class="collapse">BODY10</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch11" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Chemie, Kunststoffe und Mineralstoffe Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch11" class="collapse">BODY11</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch12" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Dienstleistung<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch12" class="collapse">BODY12</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch13" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Druck und Papier Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch13" class="collapse">BODY13</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch14" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Einzelhandel und Versandhandel<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch14" class="collapse">BODY14</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch15" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Eisen und Metall Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch15" class="collapse">BODY15</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch16" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Elektrotechnik, Elektronik und EDV Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch16" class="collapse">BODY16</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch17" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Energiegewinnung, Energieversorgung und Wasserwirtschaft<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch17" class="collapse">BODY17</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch18" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Fahrzeuge, Fahrzeugteile und Fahrzeugzubehör Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch18" class="collapse">BODY18</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch19" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Feinmechanik, Optik und Medizintechnik Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch19" class="collapse">BODY19</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch20" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Freie Berufe, selbständige Berufsgruppen<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch20" class="collapse">BODY20</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch21" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Freizeit, Kultur, Sport, Unterhaltung<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch21" class="collapse">BODY21</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch22" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+											<label>Gemeinnützige Vereine, Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch22" class="collapse"></div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch23" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Glas, Keramik, Steine- und Erden Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch23" class="collapse">BODY23</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch24" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+											<label>Grossbetriebe<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch24" class="collapse"></div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch25" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Grosshandel, Vertrieb, Ex-, Import<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch25" class="collapse">BODY25</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch26" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Handel<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch26" class="collapse">BODY26</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch27" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Handwerk<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch27" class="collapse">BODY27</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch28" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Hersteller<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch28" class="collapse">BODY28</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch29" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Holz und Holzwaren Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch29" class="collapse">BODY29</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch30" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Hotelgewerbe und Gastronomie<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch30" class="collapse">BODY30</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch31" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Informationstechnologie, Telekommunikation Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch31" class="collapse">BODY31</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch32" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Kosmetik, Körperpflege Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch32" class="collapse">BODY32</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch33" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Landwirtschaft, Forstwirtschaft und Fischerei<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch33" class="collapse">BODY33</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch34" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+											<label>Markenartikelunternehmen<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch34" class="collapse">BODY34</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch35" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Maschinen, Anlagen und Apparate Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch35" class="collapse">BODY35</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch36" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Medien, Presse, Verlage, Film, Funk und Fernsehen<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch36" class="collapse">BODY36</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch37" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Messeaussteller und Messeveranstalter<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch37" class="collapse">BODY37</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch38" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Möbel und Haushaltsgegenstände Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch38" class="collapse">BODY38</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch39" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Multimedia Dienstleistung<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch39" class="collapse">BODY39</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch40" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Nahrungsmittel, Genussmittel und Getränke Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch40" class="collapse">BODY40</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch41" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Ökologie, Umwelttechnik und Recycling Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch41" class="collapse">BODY41</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch42" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Organisationen und Institutionen<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch42" class="collapse">BODY42</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch43" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Schmuck und Uhren Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch43" class="collapse">BODY43</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch44" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Schulen, Erwachsenenbildung, Wissenschaft und Forschung<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch44" class="collapse">BODY44</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch45" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Serviceunternehmen<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch45" class="collapse">BODY45</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch46" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Sport, Spiel und Musik Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch46" class="collapse">BODY46</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch47" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Transport, Touristik und Verkehr<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch47" class="collapse">BODY47</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch48" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Verbände und Vereinigungen<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch48" class="collapse">BODY48</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch49" data-toggle="collapse"><i class="fas fa-minus"></i></span>
+											<label>Vereine und Clubs, alle<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch49" class="collapse">BODY49</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch50" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Verwaltungsgesellschaften<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch50" class="collapse">BODY50</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch51" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Wellness<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch51" class="collapse">BODY51</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch52" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Werbe- und Marketingunternehmen<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch52" class="collapse">BODY52</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch53" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Werbeartikel, Geschenkartikel und Andenken Gesamt<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch53" class="collapse">BODY53</div>
+										</div>
+										<div class="conchk">
+											<span class="chevs" data-target="#ch54" data-toggle="collapse"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></span>
+											<label>Wirtschafts- und Rechtsberatung<input type="checkbox"><span class="checkmark"></span></label>
+											<div id="ch54" class="collapse">BODY54</div>
+										</div>
+									</div>
+									<div class="tab-pane fade container" id="bet">
+											<div id="acc">
+												<div>Bitte wählen Sie nur eine der folgenden Auswahlkriterien an. Wählen Sie beide an, erhalten Sie kein Ergebnis.</div>
+												<div class="card">
+													<div class="card-header">
+														<a class="card-link" data-toggle="collapse" href="#col1">
+															Betriebsgröße
+														</a>
+													</div>
+													<div id="col1" class="collapse show">
+														<div class="card-body">
+															<label class="container">Alle
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">Großbetriebe (ab ca. 100 Beschäftigte)
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">Mittelbetriebe (ca. 6-100 Beschäftigte)
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">Kleinbetriebe (bis ca. 6 Beschäftigte)
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														</div>
+													</div>
+												</div>
+
+												<div class="card">
+													<div class="card-header">
+														<a class="card-link" data-toggle="collapse" href="#col2">
+															Beschäftigte
+														</a>
+													</div>
+													<div id="col2" class="collapse show">
+														<div class="card-body row">
+
+															<div class="form-group col-sm-6">
+																<label>von
+																	<input type="text" class="form-control" >
+																</label>
+															</div>
+
+															<div class="form-group col-sm-6">
+																<label>bis
+																	<input type="text" class="form-control">
+																</label>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="card">
+													<div class="card-header">
+														<a class="card-link" data-toggle="collapse" href="#col3">
+ 															Umsatzklasse
+														</a>
+													</div>
+													<div id="col3" class="collapse show">
+														<div class="card-body">
+															<label class="container">Alle
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">unbekannt
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">kleiner CHF 500.000
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">CHF 500.000 - 2,49 Mio.
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+															<label class="container">CHF 2,5 Mio. - 4,99 Mio.
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+
+															<label class="container">CHF 5 Mio. - 24,99 Mio.
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">CHF 25 Mio. - 49,99 Mio.
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">CHF 50 Mio. - 499,99 Mio.
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">ab 500 Mio.
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														</div>
+													</div>
+												</div>
+
+												<div class="card">
+													<div class="card-header">
+														<a class="card-link" data-toggle="collapse" href="#col4">
+															Firmensitz
+														</a>
+													</div>
+													<div id="col4" class="collapse show">
+														<div class="card-body">
+
+
+															<label class="container">Alle
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">unbekannt 
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">Hauptsitz
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+															<label class="container">Holding
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">Einzelstandort
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">Stiftung
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														</div>
+													</div>
+												</div>
+
+												<div class="card">
+													<div class="card-header">
+														<a class="card-link" data-toggle="collapse" href="#col5">
+															Rechtsform
+														</a>
+													</div>
+													<div id="col5" class="collapse show">
+														<div class="card-body">
+
+															<label class="container">GmbH
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">AG
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+
+															<label class="container">KG
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+															<label class="container">Co.
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+
+														</div>
+													</div>
+												</div>
+
+												<div class="card">
+													<div class="card-header">
+														<a class="collapsed card-link" data-toggle="collapse" href="#col6">
+															Gründungsjahr
+														</a>
+													</div>
+													<div id="col6" class="collapse show">
+														<div class="card-body">
+															<div class="form-group">
+																<label>
+																	<input type="text" class="form-control">
+																</label>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+												<div class="card">
+													<div class="card-header">
+														<a class="collapsed card-link" data-toggle="collapse" href="#col7">
+															Kommunikation
+														</a>
+													</div>
+													<div id="col7" class="collapse show">
+														<div class="card-body">
+															<label class="container">nur Firmen mit Telefon-Nummer berücksichtigen
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														</div>
+													</div>
+												</div>
+
+											</div>
+									</div>
+									<div class="tab-pane fade container" id="regi">
+										<div id="accr">
+											<div class="text-dark" style="font-size: 13px;">Die ausgewählten regionalen Merkmale werden mit einem logischen ODER verknüpft. Sie können also gleichzeitig PLZ-Gebiete und Orte aus einer ganz anderen Region suchen. Falls Sie nur bestimmte Orte selektieren möchten, klicken Sie nicht zusätzlich den zugehörigen Kanton an, da durch die ODER-Verknüpfung sonst der ganze Kanton selektiert wird.</div>
+											<div class="card">
+												<div class="card-body">
+													<label class="container m-0">Land Gesamt
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+
+												</div>
+											</div>
+
+
+											<div class="card">
+												<div class="card-header">
+													<a class="collapsed card-link" data-toggle="collapse" href="#colr100">
+															PLZ
+														</a>
+												</div>
+												<div id="colr100" class="collapse show">
+													<div class="card-body">
+														<div class="form-group">
+															<label>
+																	<input type="text" class="form-control" placeholder="Input eg. 3945-3955, 80, 81, 7-9">
+																</label>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+
+											<div class="card">
+												<div class="card-header">
+													<a class="collapsed card-link" data-toggle="collapse" href="#colr8">
+															zusätzlich Umkreis und Postleitzahl eingeben
+														</a>
+												</div>
+												<div id="colr8" class="collapse show">
+													<div class="card-body row">
+
+														<div class="form-group col-sm-3">
+															<label>
+																	<input type="number" class="form-control">
+																</label>
+														</div>
+
+														<div class="form-group col-sm-9">
+															<label>
+																	<input type="text" class="form-control" placeholder="Bitte nur 1 Suchwort eingeben">
+																</label>
+														</div>
+
+														<div class="col-12">Bitte beachten Sie, das es sich hierbei um die Luftlinie handelt.</div>
+													</div>
+												</div>
+											</div>
+
+
+
+											<div class="card">
+												<div class="card-header">
+													<a class="card-link" data-toggle="collapse" href="#colr2">
+															Beschäftigte
+														</a>
+												</div>
+												<div id="colr2" class="collapse show">
+
+													<div class="card-body">
+														<div class="input-group">
+															<input type="text" class="form-control" placeholder="Suchbegriff eingeben">
+															<div class="input-group-append">
+																<span class="input-group-text"><i class="fas fa-search"></i></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="card">
+												<div class="card-header">
+													<a class="card-link" data-toggle="collapse" href="#colr10">
+															Betriebsgröße
+														</a>
+												</div>
+												<div id="colr10" class="collapse show">
+													<div class="card-body row" style="padding-left: 40px">
+														<label class="container col-sm-6">Alle
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">deutsch
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">französisch
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">italienisch
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="card">
+												<div class="card-header">
+													<a class="card-link" data-toggle="collapse" href="#colr1000">
+															Kantone
+														</a>
+												</div>
+												<div id="colr1000" class="collapse show">
+													<div class="card-body row" style="padding-left: 40px;">
+														<label class="container col-sm-6">Aargau
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Basel-Land
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Freiburg
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Fürstentum Liechtenstein
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														<label class="container col-sm-6">Graubünden
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Neuenburg
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Sankt Gallen
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Solothurn
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														<label class="container col-sm-6">Uri
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Zug
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Appenzell-Außerrhoden
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Basel-Stadt
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														<label class="container col-sm-6">für Büsingen (Deutschland)
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Genf
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Jura
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Nidwalden
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														<label class="container col-sm-6">Schaffhausen
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Tessin
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Waadt
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Zürich
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Appenzell-Innerrhoden
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Bern
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">für Campione d'Italia (Italien)
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														<label class="container col-sm-6">Glarus
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Luzern
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Obwalden
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Schwyz
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+														<label class="container col-sm-6">Thurgau
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														<label class="container col-12">Wallis
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+								
+								</div>
+							</div>
+
+						</div>
+
+						<div class="right row justify-content-end col-4">
+							<form class="col-10" action="#" method="post" enctype="multipart/form-data">
+								<h6 class="text-danger">SEARCH SELECTION RESULTS</h6>
+								<h1>2'102010</h1>
+
+								<div class="limit">
+									<h5>LIMIT RESULT</h5>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="2'102010">
+										<div class="input-group-append">
+											<span class="input-group-text">
+											<button class="btn btn-danger">GO</button>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<button type="submit" class="btn btn-block">BUY NOW</button>
+
+								<div class="selections text-left mt-4 font-weight-bold">
+									<h6>YOUR SELECTION</h6>
+									<div class="mb-1"><span>- Branche:</span> Bauer</div>
+									<div><span>- Age:</span> 1010 - 12020</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<!--	End header-->
+
+
+	<!--	Start Search Results-->
+	<div class="container-fluid results">
+		<div class="col-11">
+			<div class="wrap row">
+				<h5 class="col-12 text-danger font-weight-bold">YOUR SEARCH RESULTS</h5>
+				<div class="col-12 row">
+					<div class="col-6 p-2">
+						<div class="col-12 samp">
+							<a href="">
+								<h6>SAMPLE COMPANY GMBH</h6>
+							</a>
+							<div class="adress d-flex"><i class="text-danger fas fa-map-marker-alt" style="font-size: 21px;"></i>&nbsp; Sample Street 12, 2020 Bergdorf</div>
+							<div class="branch"><span>Branche:</span> Bauer</div>
+							<div class="icons">
+								<a href="" class="icon"><i class="fas fa-phone"></i></a>
+								<a href="" class="icon"><i class="fas fa-at"></i></a>
+								<a href="" class="icon"><i class="fas fa-globe"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 p-2">
+						<div class="col-12 samp">
+							<a href="">
+								<h6>SAMPLE COMPANY GMBH</h6>
+							</a>
+							<div class="adress d-flex"><i class="text-danger fas fa-map-marker-alt" style="font-size: 21px;"></i>&nbsp; Sample Street 12, 2020 Bergdorf</div>
+							<div class="branch"><span>Branche:</span> Bauer</div>
+							<div class="icons">
+								<a href="" class="icon"><i class="fas fa-phone"></i></a>
+								<a href="" class="icon"><i class="fas fa-at"></i></a>
+								<a href="" class="icon"><i class="fas fa-globe"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 p-2">
+						<div class="col-12 samp">
+							<a href="">
+								<h6>SAMPLE COMPANY GMBH</h6>
+							</a>
+							<div class="adress d-flex"><i class="text-danger fas fa-map-marker-alt" style="font-size: 21px;"></i>&nbsp; Sample Street 12, 2020 Bergdorf</div>
+							<div class="branch"><span>Branche:</span> Bauer</div>
+							<div class="icons">
+								<a href="" class="icon"><i class="fas fa-phone"></i></a>
+								<a href="" class="icon"><i class="fas fa-at"></i></a>
+								<a href="" class="icon"><i class="fas fa-globe"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 p-2">
+						<div class="col-12 samp">
+							<a href="">
+								<h6>SAMPLE COMPANY GMBH</h6>
+							</a>
+							<div class="adress d-flex"><i class="text-danger fas fa-map-marker-alt" style="font-size: 21px;"></i>&nbsp; Sample Street 12, 2020 Bergdorf</div>
+							<div class="branch"><span>Branche:</span> Bauer</div>
+							<div class="icons">
+								<a href="" class="icon"><i class="fas fa-phone"></i></a>
+								<a href="" class="icon"><i class="fas fa-at"></i></a>
+								<a href="" class="icon"><i class="fas fa-globe"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 d-flex justify-content-end p-2">
+						<a href="" class="text-danger" style="font-size: 17px;font-weight: 500">LOAD MORE...</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--	End Search Results-->
+
+	<!--Start Footer-->
+	<footer class="col-12">
+		<div class="row">
+			<div class="container-fluid">
+				<div class="row col-12">
+					<a href="" class="logo col-8 col-sm-6 col-lg-4 pl-1 mb-3 row justify-content-center d-flex
+					align-items-center">
+						<div class="col-5">
+							<img src="imgs/logo-foot.png" alt="swiss" class="img-fluid">
+						</div>
+						<div class="txt col-6 row">
+							<div class="col-12 text-danger">Schweizer <br><span>FIRMENDRESSEN</span></div>
+						</div>
+					</a>
+					<div class="links col-6 col-sm-3 col-lg-2 mb-3">
+						<h6 class="text-danger">LINKS</h6>
+						<div class="list-group">
+							<a href="#">Branche</a>
+							<a href="#">BetriebsGRöße</a>
+							<a href="#">Region</a>
+							<a href="#">Führungskräfte</a>
+						</div>
+					</div>
+					<div class="info col-6 col-sm-3 col-lg-2 mb-3">
+						<h6 class="text-danger">INFO</h6>
+						<div class="list-group">
+							<a href="#" class="row">About Schweizer</a>
+							<a href="#">Terms of use</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Imprint</a>
+						</div>
+					</div>
+					<div class="contact col-12 col-lg-4 mt-md-3 ">
+						<div class="row justify-content-center ml-3 mx-sm-auto">
+							<h6 class="text-danger d-none d-lg-block col-12 text-center">KEEP IN TOUCH</h6>
+							<div class="list-group-inline d-flex justify-content-around">
+								<a href="#" class="">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+								<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+								<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
+								<a href="#">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-danger mt-4 col-12 d-flex align-items-center justify-content-center">
+				<p class="m-3 text-white" style="font-size: 16px;font-weight: bold;letter-spacing: 1px">
+					&copy; COPYRIGHT 2018 SCHWEIZER FIRMENDRESSEN. ALL RIGHTS RESERVED
+				</p>
+			</div>
+
+		</div>
+	</footer>
+	<!--End Footer-->
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/fontawesome-all.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,742 @@
+//Globals
+$red: #da202c;
+$inputbg: #f6f6f6;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	.container-fluid {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+}
+
+/*Start Navbar*/
+
+.navbar {
+	.container-fluid {
+		@media (max-width: 768px) {
+			width: 100% !important;
+		}
+	}
+	.navbar-toggler {
+		margin-right: 20px;
+		background: $red;
+		padding: 10px 18px;
+		;
+		font-size: 19px;
+		&-icon {
+			color: #fff;
+
+		}
+	}
+	padding: 0;
+	margin: 0;
+	&:after {
+		@media (max-width: 768px) {
+			display: none;
+		}
+		content: "";
+		z-index: -1;
+		position: absolute;
+		top: 47%;
+		left: 0;
+		background: #ddd;
+		height: 1px;
+		width: 100%;
+	}
+
+	.navbar-brand {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 280px;
+		@media (max-width: 768px) {
+			min-width: 180px;
+		}
+
+		.txt {
+			font-weight: 600;
+			color: #fff;
+			text-align: center;
+			font-size: 23px;
+			letter-spacing: 1px;
+			margin: 0;
+			padding: 0;
+			* {
+				display: block;
+			}
+		}
+	}
+	.row {
+		padding: 0;
+		margin: 0;
+		.upper {
+			display: flex;
+			justify-content: flex-end;
+			padding-left: 25px;
+			font-weight: 500;
+			font-size: 15px;
+			padding-top: 3px;
+			@media (max-width: 768px) {
+				margin-left: 40%;
+				margin-top: 20px;
+				justify-content: flex-end;
+			}
+			a {
+				padding-bottom: 3px;
+				color: #000;
+				&:hover {
+					color: $red;
+				}
+			}
+		}
+		.navbar-nav {
+			margin-top: 10px;
+			.nav-item {
+				margin-right: 5%;
+				padding: 5px 0;
+
+				@media (max-width: 790px) {
+					margin-right: 2%;
+				}
+				.nav-link {
+					position: relative;
+					top: 8px;
+					color: #000;
+					padding: 10px 20px;
+					font-size: 16px;
+					font-weight: 600;
+					letter-spacing: 1px;
+					@media (max-width: 768px) {
+						padding: 10px 0 10px 10px;
+					}
+					&:after {
+						content: "";
+						z-index: 1;
+						position: absolute;
+						bottom: -5px;
+						left: 0;
+						background: $red;
+						height: 3px;
+						width: 0;
+						transition: width .2s ease-in-out;
+					}
+					&:hover {
+						&:after {
+							width: 100%;
+						}
+
+						&:after {
+							@media (max-width: 992px) {
+								width: 35%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*End Navbar*/
+
+//Start Header
+header {
+	.panel {
+		position: relative;
+		&:after {
+			content: "";
+			background: rgba(0, 0, 0, .1);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+
+		.img-fluid {
+			position: relative;
+			z-index: 0;
+		}
+
+
+		.caption {
+			letter-spacing: 1px;
+			z-index: 1;
+			position: absolute;
+			top: 5%;
+			left: 5%;
+			font-size: 19px;
+			color: #fff;
+			width: 40%;
+			@media (max-width: 992px) {
+				width: 60%
+			}
+			@media (max-width: 600px) {
+				font-size: 17px;
+				width: 80%
+			}
+
+		}
+
+
+		.left {
+			z-index: 2;
+			position: absolute;
+			top: 25%;
+			left: 5%;
+			border: 1px solid #f6f6f6;
+			background: #fff;
+			padding: 30px;
+			@media (max-width: 768px) {
+				top:50%;
+				left: 0;
+			}
+			h5 {
+				color: $red;
+				font-size: 23px;
+				@media (max-width: 768px) {
+					font-size: 16px;
+				}
+				.small {
+					color: #000;
+					font-size: 16px;
+					@media (max-width: 768px) {
+						font-size: 14px;
+					}
+				}
+			}
+			.options {
+				padding: 15px 0 0 0;
+				.nav-tabs {
+					border-bottom: 2px solid $red;
+					.nav-link {
+						color: $red;
+						transition: all .2s ease-in-out;
+						font-size: 13px;
+						padding: 10px;
+						font-weight: 500;
+						&:hover {
+							border: 1px solid $red;
+						}
+						@media (max-width: 768px) {
+							font-size: 12px;
+						}
+						&.active {
+							margin-bottom: -3px;
+							border: 1px solid $red;
+							background: $red;
+							color: #fff;
+							transform-origin: center;
+							transform: scale(1.05);
+						}
+					}
+				}
+				.tab-content {
+					padding: 0;
+					.tab-pane {
+						padding: 20px 0;
+						/* The container */
+						.conchk {
+							display: block;
+							position: relative;
+							padding-left: 45px;
+							cursor: pointer;
+							font-size: 13px;
+							-webkit-user-select: none;
+							-moz-user-select: none;
+							-ms-user-select: none;
+							user-select: none;
+
+							.chevs {
+								color: red;
+								position: relative;
+								top: 0;
+								left: -30px;
+								font-size: 11px;
+								@media (max-width: 768px) {
+									font-size: 10px;
+								}
+								.fa-chevron-down {
+									display: none;
+								}
+								.fa-minus {
+									font-size: 10px;
+								}
+							}
+
+							input {
+								position: absolute;
+								opacity: 0;
+								cursor: pointer;
+							}
+
+							label {
+								position: relative;
+								padding-top: 1px;
+							}
+							/* Create a custom checkbox */
+							.checkmark {
+								position: absolute;
+								top: 3px;
+								left: -22px;
+								height: 14px;
+								width: 14px;
+								background-color: #f6f6f6;
+								border: 1px solid red;
+							}
+
+							&:hover input ~ .checkmark {
+								background-color: #eee;
+							}
+
+							input:checked ~ .checkmark {
+								background-color: red;
+							}
+
+							input:checked ~ .checkmark:after {
+								display: block;
+							}
+
+							.checkmark:after {
+								content: "";
+								position: absolute;
+								display: none;
+								left: 3px;
+								top: -1px;
+								width: 6px;
+								height: 12px;
+								border: solid white;
+								border-width: 0 3px 3px 0;
+								-webkit-transform: rotate(45deg);
+								-ms-transform: rotate(45deg);
+								transform: rotate(45deg);
+							}
+						}
+
+						#acc,
+						#accr,
+						#accf {
+							div:first-child {
+								font-size: 14px;
+							}
+							.card {
+								margin: 15px auto;
+								.card-header {
+									background: $red;
+									border-bottom: 0;
+									padding: 10px 25px;
+									a {
+										font-size: 16px;
+										color: #fff;
+										font-weight: 500;
+									}
+								}
+								.card-body {
+									padding: 10px 25px;
+									.container {
+										display: block;
+										position: relative;
+										padding-left: 25px;
+										margin-bottom: 12px;
+										cursor: pointer;
+										font-size: 13px;
+										-webkit-user-select: none;
+										-moz-user-select: none;
+										-ms-user-select: none;
+										user-select: none;
+
+										input {
+											position: absolute;
+											opacity: 0;
+											cursor: pointer;
+										}
+										.checkmark {
+											position: absolute;
+											top: 1px;
+											left: 0;
+											height: 16px;
+											width: 16px;
+											background-color: #eee;
+										}
+										&:hover input ~ .checkmark {
+											background-color: #ccc;
+										}
+										input:checked ~ .checkmark {
+											background-color: $red;
+										}
+										input:checked ~ .checkmark:after {
+											display: block;
+										}
+										.checkmark:after {
+											content: "";
+											position: absolute;
+											display: none;
+											left: 5px;
+											top: 1px;
+											width: 6px;
+											height: 12px;
+											border: solid white;
+											border-width: 0 3px 3px 0;
+											-webkit-transform: rotate(45deg);
+											-ms-transform: rotate(45deg);
+											transform: rotate(45deg);
+										}
+									}
+
+									.form-group {
+										margin-bottom: 5px;
+										label {
+											font-size: 16px;
+											color: $red;
+											font-weight: 500;
+											input {
+												margin-top: 10px;
+												font-size: 16px;
+												padding: 8px 20px;
+												position: relative;
+												&::placeholder {
+													font-size: 13px;
+												}
+											}
+										}
+									}
+
+									.input-group {
+										input {
+											font-size: 16px;
+											padding: 8px 20px;
+											background: $inputbg;
+											border: none;
+
+										}
+										.input-group-text {
+											font-size: 16px;
+											background: $inputbg;
+											border: none;
+										}
+									}
+								}
+							}
+						}
+
+
+						.unter {
+							margin: 15px 0;
+							border: 1px solid #eee;
+							padding: 20px;
+							.container {
+								padding-left: 25px;
+								margin-bottom: 10px;
+								display: block;
+								position: relative;
+								cursor: pointer;
+								font-size: 13px;
+								-webkit-user-select: none;
+								-moz-user-select: none;
+								-ms-user-select: none;
+								user-select: none;
+
+								input {
+									position: absolute;
+									opacity: 0;
+									cursor: pointer;
+								}
+								.checkmark {
+									position: absolute;
+									top: 1px;
+									left: 0;
+									width: 16px;
+									height: 16px;
+									background-color: #eee;
+								}
+								&:hover input ~ .checkmark {
+									background-color: #ccc;
+								}
+								input:checked ~ .checkmark {
+									background-color: $red;
+								}
+								input:checked ~ .checkmark:after {
+									display: block;
+								}
+								.checkmark:after {
+									content: "";
+									position: absolute;
+									display: none;
+									left: 5px;
+									top: 0;
+									width: 6px;
+									height: 12px;
+									border: solid white;
+									border-width: 0 3px 3px 0;
+									-webkit-transform: rotate(45deg);
+									-ms-transform: rotate(45deg);
+									transform: rotate(45deg);
+								}
+							}
+						}
+						.falls {
+							@extend .unter;
+							.container {
+								margin-bottom: 0;
+								.checkmark {
+									top: 1px;
+								}
+							}
+						}
+
+						.maxi {
+							.card-link {
+								font-size: 13px !important;
+								font-weight: normal;
+							}
+							#colf7 {
+								input {
+									padding: 5px 10px;
+									width: 50%;
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+
+		.right {
+			text-align: center;
+			padding: 30px 0 0 0;
+			position: absolute;
+			right: 0;
+			top: 100%;
+			@media (max-width: 768px) {
+				display: none;
+			}
+
+			h6 {
+				font-size: 18px;
+				font-weight: bold;
+			}
+
+			h1 {
+				font-size: 37px;
+				font-weight: bold;
+			}
+
+			.limit {
+				text-align: left;
+				padding: 20px 0 30px;
+				h5 {
+					font-size: 16px;
+					font-weight: bold;
+					color: $red;
+
+				}
+
+				input {
+					background: $inputbg;
+					padding: 10px;
+					border: none;
+					&::placeholder {
+						color: #bbb;
+						font-size: 13px;
+					}
+				}
+
+
+				.input-group-text {
+					background: $inputbg;
+					border: none;
+					.btn {
+						padding: 5px 10px;
+						border-radius: 0;
+						font-size: 13px;
+						font-weight: 500;
+					}
+				}
+
+			}
+
+			.btn {
+				border-radius: 0;
+				padding: 17px 0;
+				background: $red;
+				border: none;
+				color: #fff;
+				font-weight: 500;
+			}
+
+			.selections {
+				h6 {
+					color: $red;
+					font-size: 15px;
+				}
+				div {
+					font-weight: 500;
+					font-size: 13px;
+					span {
+						font-weight: bold;
+						color: $red;
+					}
+				}
+			}
+		}
+
+
+
+	}
+
+}
+
+//End Header
+//Start Search Results
+.results {
+	position: relative;
+	width:100%;
+	@media (max-width: 768px) {
+		display: none;
+	}
+	.wrap {
+		margin: 0;
+		position: absolute;
+		left: 6.5%;
+		h5 {
+			margin-bottom: 30px;
+		}
+		.samp {
+			padding: 20px;
+			border: 1px solid #efefef;
+			& > a {
+				text-decoration-color: $red;
+			}
+			&:hover {
+				border-color: $red;
+			}
+			h6 {
+				color: $red;
+				font-weight: bold;
+				font-size: 17px;
+			}
+
+			.adress {
+				margin-top: 15px;
+				font-weight: bold;
+				font-size: 15px;
+			}
+
+			.branch {
+				margin-top: 15px;
+				font-weight: 500;
+				font-size: 17px;
+				span {
+					color: $red;
+				}
+			}
+
+			.icons {
+				display: flex;
+				margin-top: 15px;
+				justify-content: flex-end;
+				.icon {
+					font-size: 15px;
+					border: 1px solid $red;
+					color: $red;
+					border-radius: 50%;
+					padding: 4px 7px;
+					display: inline-block;
+					margin-left: 10px;
+					transition: all .3s ease-in-out;
+					&:hover {
+						color: #fff;
+						background: $red;
+					}
+				}
+			}
+		}
+	}
+}
+
+//End Search Results
+//Start Footer
+footer {
+	position: absolute;
+	left: 0;
+	border-top: 1px solid #eee;
+	padding-top: 30px;
+	@media (max-width: 768px) {}
+	.logo {
+		text-decoration: none;
+		.txt {
+
+			padding: 0;
+			margin-right: 10px;
+			.col-12 {
+				font-weight: bold;
+				font-size: 22px;
+				letter-spacing: 1px;
+				span {
+					font-weight: normal;
+					font-size: 15px;
+					letter-spacing: 0
+				}
+			}
+		}
+	}
+	h6 {
+		font-size: 18px;
+	}
+
+	a {
+		padding: 5px 0;
+		font-size: 16px;
+		color: #000;
+		&:hover {
+			color: $red;
+		}
+	}
+
+	.info {
+		.row {
+			padding-left: 15px;
+		}
+	}
+	.contact {
+		@media (max-width: 768px) {
+			display: flex;
+		}
+		a {
+			font-size: 19px;
+			margin-left: 2%;
+			display: inline-flex;
+			justify-content: center;
+			border-radius: 50%;
+			padding: 10px;
+			border: 1px solid $red;
+			text-decoration: none;
+			color: $red;
+			transition: all .3s ease-in-out;
+			&:first-child {
+				margin: 0;
+				padding: 10px 15px;
+			}
+			&:last-child,
+			&:nth-last-of-type(2) {
+				padding: 10px 12px;
+			}
+			&:hover {
+				background: $red;
+				color: #fff;
+			}
+		}
+	}
+}
+
+//End Footer
+.btn,
+input {
+	box-shadow: none !important;
+	outline: none;
+}

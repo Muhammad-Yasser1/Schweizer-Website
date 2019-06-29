@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+body {
+  font-family: 'Roboto', sans-serif; }
+  body .container-fluid {
+    padding-left: 4%;
+    padding-right: 4%; }
+
+/*Start Navbar*/
+.navbar {
+  padding: 0;
+  margin: 0; }
+  @media (max-width: 768px) {
+    .navbar .container-fluid {
+      width: 100% !important; } }
+  .navbar .navbar-toggler {
+    margin-right: 20px;
+    background: #da202c;
+    padding: 10px 18px;
+    font-size: 19px; }
+    .navbar .navbar-toggler-icon {
+      color: #fff; }
+  .navbar:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    background: #ddd;
+    height: 1px;
+    width: 100%; }
+    @media (max-width: 768px) {
+      .navbar:after {
+        display: none; } }
+  .navbar .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 280px; }
+    @media (max-width: 768px) {
+      .navbar .navbar-brand {
+        min-width: 180px; } }
+    .navbar .navbar-brand .txt {
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      font-size: 23px;
+      letter-spacing: 1px;
+      margin: 0;
+      padding: 0; }
+      .navbar .navbar-brand .txt * {
+        display: block; }
+  .navbar .row {
+    padding: 0;
+    margin: 0; }
+    .navbar .row .upper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding-left: 25px;
+      font-weight: 500;
+      font-size: 15px;
+      padding-top: 3px; }
+      @media (max-width: 768px) {
+        .navbar .row .upper {
+          margin-left: 40%;
+          margin-top: 20px;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; } }
+      .navbar .row .upper a {
+        padding-bottom: 3px;
+        color: #000; }
+        .navbar .row .upper a:hover {
+          color: #da202c; }
+    .navbar .row .navbar-nav {
+      margin-top: 10px; }
+      .navbar .row .navbar-nav .nav-item {
+        margin-right: 5%;
+        padding: 5px 0; }
+        @media (max-width: 790px) {
+          .navbar .row .navbar-nav .nav-item {
+            margin-right: 2%; } }
+        .navbar .row .navbar-nav .nav-item .nav-link {
+          position: relative;
+          top: 8px;
+          color: #000;
+          padding: 10px 20px;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 1px; }
+          @media (max-width: 768px) {
+            .navbar .row .navbar-nav .nav-item .nav-link {
+              padding: 10px 0 10px 10px; } }
+          .navbar .row .navbar-nav .nav-item .nav-link:after {
+            content: "";
+            z-index: 1;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            background: #da202c;
+            height: 3px;
+            width: 0;
+            -webkit-transition: width .2s ease-in-out;
+            transition: width .2s ease-in-out; }
+          .navbar .row .navbar-nav .nav-item .nav-link:hover:after {
+            width: 100%; }
+          @media (max-width: 992px) {
+            .navbar .row .navbar-nav .nav-item .nav-link:hover:after {
+              width: 35%; } }
+
+/*End Navbar*/
+header .panel {
+  position: relative; }
+  header .panel:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  header .panel .img-fluid {
+    position: relative;
+    z-index: 0; }
+  header .panel .caption {
+    letter-spacing: 1px;
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 19px;
+    color: #fff;
+    width: 40%; }
+    @media (max-width: 992px) {
+      header .panel .caption {
+        width: 60%; } }
+    @media (max-width: 600px) {
+      header .panel .caption {
+        font-size: 17px;
+        width: 80%; } }
+  header .panel .left {
+    z-index: 2;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    border: 1px solid #f6f6f6;
+    background: #fff;
+    padding: 30px 30px 0 30px;border: none; }
+    @media (max-width: 768px) {
+      header .panel .left {
+        top: 50%;
+        left: 0; } }
+    header .panel .left h5 {
+      color: #da202c;
+      font-size: 23px; }
+      @media (max-width: 768px) {
+        header .panel .left h5 {
+          font-size: 16px; } }
+      header .panel .left h5 .small {
+        color: #000;
+        font-size: 16px; }
+        @media (max-width: 768px) {
+          header .panel .left h5 .small {
+            font-size: 14px; } }
+    header .panel .left .options {
+      padding: 15px 0 0 0; }
+      header .panel .left .options .nav-tabs {
+        border-bottom: 2px solid #da202c; }
+        header .panel .left .options .nav-tabs .nav-link {
+          color: #da202c;
+          -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+          font-size: 13px;
+          padding: 10px;
+          font-weight: 500; }
+          header .panel .left .options .nav-tabs .nav-link:hover {
+            border: 1px solid #da202c; }
+          @media (max-width: 768px) {
+            header .panel .left .options .nav-tabs .nav-link {
+              font-size: 12px; } }
+          header .panel .left .options .nav-tabs .nav-link.active {
+            margin-bottom: -3px;
+            border: 1px solid #da202c;
+            background: #da202c;
+            color: #fff;
+            -webkit-transform-origin: center;
+                    transform-origin: center;
+            -webkit-transform: scale(1.05);
+                    transform: scale(1.05); }
+      header .panel .left .options .tab-content {
+        padding: 0; }
+        header .panel .left .options .tab-content .tab-pane {
+          padding: 20px 0;
+          /* The container */ }
+          header .panel .left .options .tab-content .tab-pane .conchk {
+            display: block;
+            position: relative;
+            padding-left: 45px;
+            cursor: pointer;
+            font-size: 13px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            /* Create a custom checkbox */ }
+            header .panel .left .options .tab-content .tab-pane .conchk .chevs {
+              color: red;
+              position: relative;
+              top: 0;
+              left: -30px;
+              font-size: 11px; }
+              @media (max-width: 768px) {
+                header .panel .left .options .tab-content .tab-pane .conchk .chevs {
+                  font-size: 10px; } }
+              header .panel .left .options .tab-content .tab-pane .conchk .chevs .fa-chevron-down {
+                display: none; }
+              header .panel .left .options .tab-content .tab-pane .conchk .chevs .fa-minus {
+                font-size: 10px; }
+            header .panel .left .options .tab-content .tab-pane .conchk input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer; }
+            header .panel .left .options .tab-content .tab-pane .conchk label {
+              position: relative;
+              padding-top: 1px; }
+            header .panel .left .options .tab-content .tab-pane .conchk .checkmark {
+              position: absolute;
+              top: 3px;
+              left: -22px;
+              height: 14px;
+              width: 14px;
+              background-color: #f6f6f6;
+              border: 1px solid red; }
+            header .panel .left .options .tab-content .tab-pane .conchk:hover input ~ .checkmark {
+              background-color: #eee; }
+            header .panel .left .options .tab-content .tab-pane .conchk input:checked ~ .checkmark {
+              background-color: red; }
+            header .panel .left .options .tab-content .tab-pane .conchk input:checked ~ .checkmark:after {
+              display: block; }
+            header .panel .left .options .tab-content .tab-pane .conchk .checkmark:after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: 3px;
+              top: -1px;
+              width: 6px;
+              height: 12px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+          header .panel .left .options .tab-content .tab-pane #acc div:first-child,
+          header .panel .left .options .tab-content .tab-pane #accr div:first-child,
+          header .panel .left .options .tab-content .tab-pane #accf div:first-child {
+            font-size: 14px; }
+          header .panel .left .options .tab-content .tab-pane #acc .card,
+          header .panel .left .options .tab-content .tab-pane #accr .card,
+          header .panel .left .options .tab-content .tab-pane #accf .card {
+            margin: 15px auto; }
+            header .panel .left .options .tab-content .tab-pane #acc .card .card-header,
+            header .panel .left .options .tab-content .tab-pane #accr .card .card-header,
+            header .panel .left .options .tab-content .tab-pane #accf .card .card-header {
+              background: #da202c;
+              border-bottom: 0;
+              padding: 10px 25px; }
+              header .panel .left .options .tab-content .tab-pane #acc .card .card-header a,
+              header .panel .left .options .tab-content .tab-pane #accr .card .card-header a,
+              header .panel .left .options .tab-content .tab-pane #accf .card .card-header a {
+                font-size: 16px;
+                color: #fff;
+                font-weight: 500; }
+            header .panel .left .options .tab-content .tab-pane #acc .card .card-body,
+            header .panel .left .options .tab-content .tab-pane #accr .card .card-body,
+            header .panel .left .options .tab-content .tab-pane #accf .card .card-body {
+              padding: 10px 25px; }
+              header .panel .left .options .tab-content .tab-pane #acc .card .card-body .container,
+              header .panel .left .options .tab-content .tab-pane #accr .card .card-body .container,
+              header .panel .left .options .tab-content .tab-pane #accf .card .card-body .container {
+                display: block;
+                position: relative;
+                padding-left: 25px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 13px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none; }
+                header .panel .left .options .tab-content .tab-pane #acc .card .card-body .container input,
+                header .panel .left .options .tab-content .tab-pane #accr .card .card-body .container input,
+                header .panel .left .options .tab-content .tab-pane #accf .card .card-body .container input {
+                  position: absolute;
+                  opacity: 0;
+                  cursor: pointer; }
+                header .panel .left .options .tab-content .tab-pane #acc .card .card-body .container .checkmark,
+                header .panel .left .options .tab-content .tab-pane #accr .card .card-body .container .checkmark,
+                header .panel .left .options .tab-content .tab-pane #accf .card .card-body .container .checkmark {
+                  position: absolute;
+                  top: 1px;
+                  left: 0;
+                  height: 16px;
+                  width: 16px;
+                  background-color: #eee; }
+                header .panel .left .options .tab-content .tab-pane #acc .card .card-body .container:hover input ~ .checkmark,
+                header .panel .left .options .tab-content .tab-pane #accr .card .card-body .container:hover input ~ .checkmark,
+                header .panel .left .options .tab-content .tab-pane #accf .card .card-body .container:hover input ~ .checkmark {
+                  background-color: #ccc; }
+                header .panel .left .options .tab-content .tab-pane #acc .card .card-body .container input:checked ~ .checkmark,
+                header .panel .left .options .tab-content .tab-pane #accr .card .card-body .container input:checked ~ .checkmark,
+                header .panel .left .options .tab-content .tab-pane #accf .card .card-body .container input:checked ~ .checkmark {
+                  background-color: #da202c; }
+                header .panel .left .options .tab-content .tab-pane #acc .card .card-body .container input:checked ~ .checkmark:after,
+                header .panel .left .options .tab-content .tab-pane #accr .card .card-body .container input:checked ~ .checkmark:after,
+                header .panel .left .options .tab-content .tab-pane #accf .card .card-body .container input:checked ~ .checkmark:after {
+                  display: block; }
+                header .panel .left .options .tab-content .tab-pane #acc .card .card-body .container .checkmark:after,
+                header .panel .left .options .tab-content .tab-pane #accr .card .card-body .container .checkmark:after,
+                header .panel .left .options .tab-content .tab-pane #accf .card .card-body .container .checkmark:after {
+                  content: "";
+                  position: absolute;
+                  display: none;
+                  left: 5px;
+                  top: 1px;
+                  width: 6px;
+                  height: 12px;
+                  border: solid white;
+                  border-width: 0 3px 3px 0;
+                  -webkit-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+              header .panel .left .options .tab-content .tab-pane #acc .card .card-body .form-group,
+              header .panel .left .options .tab-content .tab-pane #accr .card .card-body .form-group,
+              header .panel .left .options .tab-content .tab-pane #accf .card .card-body .form-group {
+                margin-bottom: 5px; }
+                header .panel .left .options .tab-content .tab-pane #acc .card .card-body .form-group label,
+                header .panel .left .options .tab-content .tab-pane #accr .card .card-body .form-group label,
+                header .panel .left .options .tab-content .tab-pane #accf .card .card-body .form-group label {
+                  font-size: 16px;
+                  color: #da202c;
+                  font-weight: 500; }
+                  header .panel .left .options .tab-content .tab-pane #acc .card .card-body .form-group label input,
+                  header .panel .left .options .tab-content .tab-pane #accr .card .card-body .form-group label input,
+                  header .panel .left .options .tab-content .tab-pane #accf .card .card-body .form-group label input {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    padding: 8px 20px;
+                    position: relative; }
+                    header .panel .left .options .tab-content .tab-pane #acc .card .card-body .form-group label input::-webkit-input-placeholder,
+                    header .panel .left .options .tab-content .tab-pane #accr .card .card-body .form-group label input::-webkit-input-placeholder,
+                    header .panel .left .options .tab-content .tab-pane #accf .card .card-body .form-group label input::-webkit-input-placeholder {
+                      font-size: 13px; }
+                    header .panel .left .options .tab-content .tab-pane #acc .card .card-body .form-group label input:-ms-input-placeholder,
+                    header .panel .left .options .tab-content .tab-pane #accr .card .card-body .form-group label input:-ms-input-placeholder,
+                    header .panel .left .options .tab-content .tab-pane #accf .card .card-body .form-group label input:-ms-input-placeholder {
+                      font-size: 13px; }
+                    header .panel .left .options .tab-content .tab-pane #acc .card .card-body .form-group label input::-ms-input-placeholder,
+                    header .panel .left .options .tab-content .tab-pane #accr .card .card-body .form-group label input::-ms-input-placeholder,
+                    header .panel .left .options .tab-content .tab-pane #accf .card .card-body .form-group label input::-ms-input-placeholder {
+                      font-size: 13px; }
+                    header .panel .left .options .tab-content .tab-pane #acc .card .card-body .form-group label input::placeholder,
+                    header .panel .left .options .tab-content .tab-pane #accr .card .card-body .form-group label input::placeholder,
+                    header .panel .left .options .tab-content .tab-pane #accf .card .card-body .form-group label input::placeholder {
+                      font-size: 13px; }
+              header .panel .left .options .tab-content .tab-pane #acc .card .card-body .input-group input,
+              header .panel .left .options .tab-content .tab-pane #accr .card .card-body .input-group input,
+              header .panel .left .options .tab-content .tab-pane #accf .card .card-body .input-group input {
+                font-size: 16px;
+                padding: 8px 20px;
+                background: #f6f6f6;
+                border: none; }
+              header .panel .left .options .tab-content .tab-pane #acc .card .card-body .input-group .input-group-text,
+              header .panel .left .options .tab-content .tab-pane #accr .card .card-body .input-group .input-group-text,
+              header .panel .left .options .tab-content .tab-pane #accf .card .card-body .input-group .input-group-text {
+                font-size: 16px;
+                background: #f6f6f6;
+                border: none; }
+          header .panel .left .options .tab-content .tab-pane .unter, header .panel .left .options .tab-content .tab-pane .falls {
+            margin: 15px 0;
+            border: 1px solid #eee;
+            padding: 20px; }
+            header .panel .left .options .tab-content .tab-pane .unter .container, header .panel .left .options .tab-content .tab-pane .falls .container {
+              padding-left: 25px;
+              margin-bottom: 10px;
+              display: block;
+              position: relative;
+              cursor: pointer;
+              font-size: 13px;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; }
+              header .panel .left .options .tab-content .tab-pane .unter .container input, header .panel .left .options .tab-content .tab-pane .falls .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer; }
+              header .panel .left .options .tab-content .tab-pane .unter .container .checkmark, header .panel .left .options .tab-content .tab-pane .falls .container .checkmark {
+                position: absolute;
+                top: 1px;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                background-color: #eee; }
+              header .panel .left .options .tab-content .tab-pane .unter .container:hover input ~ .checkmark, header .panel .left .options .tab-content .tab-pane .falls .container:hover input ~ .checkmark {
+                background-color: #ccc; }
+              header .panel .left .options .tab-content .tab-pane .unter .container input:checked ~ .checkmark, header .panel .left .options .tab-content .tab-pane .falls .container input:checked ~ .checkmark {
+                background-color: #da202c; }
+              header .panel .left .options .tab-content .tab-pane .unter .container input:checked ~ .checkmark:after, header .panel .left .options .tab-content .tab-pane .falls .container input:checked ~ .checkmark:after {
+                display: block; }
+              header .panel .left .options .tab-content .tab-pane .unter .container .checkmark:after, header .panel .left .options .tab-content .tab-pane .falls .container .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+                left: 5px;
+                top: 0;
+                width: 6px;
+                height: 12px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
+          header .panel .left .options .tab-content .tab-pane .falls .container {
+            margin-bottom: 0; }
+            header .panel .left .options .tab-content .tab-pane .falls .container .checkmark {
+              top: 1px; }
+          header .panel .left .options .tab-content .tab-pane .maxi .card-link {
+            font-size: 13px !important;
+            font-weight: normal; }
+          header .panel .left .options .tab-content .tab-pane .maxi #colf7 input {
+            padding: 5px 10px;
+            width: 50%; }
+  header .panel .right {
+    text-align: center;
+    padding: 30px 0 0 0;
+    position: absolute;
+    right: 0;
+    top: 100%; }
+    @media (max-width: 768px) {
+      header .panel .right {
+        display: none; } }
+    header .panel .right h6 {
+      font-size: 18px;
+      font-weight: bold; }
+    header .panel .right h1 {
+      font-size: 37px;
+      font-weight: bold; }
+    header .panel .right .limit {
+      text-align: left;
+      padding: 20px 0 30px; }
+      header .panel .right .limit h5 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #da202c; }
+      header .panel .right .limit input {
+        background: #f6f6f6;
+        padding: 10px;
+        border: none; }
+        header .panel .right .limit input::-webkit-input-placeholder {
+          color: #bbb;
+          font-size: 13px; }
+        header .panel .right .limit input:-ms-input-placeholder {
+          color: #bbb;
+          font-size: 13px; }
+        header .panel .right .limit input::-ms-input-placeholder {
+          color: #bbb;
+          font-size: 13px; }
+        header .panel .right .limit input::placeholder {
+          color: #bbb;
+          font-size: 13px; }
+      header .panel .right .limit .input-group-text {
+        background: #f6f6f6;
+        border: none; }
+        header .panel .right .limit .input-group-text .btn {
+          padding: 5px 10px;
+          border-radius: 0;
+          font-size: 13px;
+          font-weight: 500; }
+    header .panel .right .btn {
+      border-radius: 0;
+      padding: 17px 0;
+      background: #da202c;
+      border: none;
+      color: #fff;
+      font-weight: 500; }
+    header .panel .right .selections h6 {
+      color: #da202c;
+      font-size: 15px; }
+    header .panel .right .selections div {
+      font-weight: 500;
+      font-size: 13px; }
+      header .panel .right .selections div span {
+        font-weight: bold;
+        color: #da202c; }
+
+.results {
+  position: relative;
+  width: 100%; }
+  @media (max-width: 768px) {
+    .results {
+      display: none; } }
+  .results .wrap {
+    margin: 0;
+    position: absolute;
+    left: 6.5%; }
+    .results .wrap h5 {
+      margin-bottom: 30px; }
+    .results .wrap .samp {
+      padding: 20px;
+      border: 1px solid #efefef; }
+      .results .wrap .samp > a {
+        -webkit-text-decoration-color: #da202c;
+                text-decoration-color: #da202c; }
+      .results .wrap .samp:hover {
+        border-color: #da202c; }
+      .results .wrap .samp h6 {
+        color: #da202c;
+        font-weight: bold;
+        font-size: 17px; }
+      .results .wrap .samp .adress {
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 15px; }
+      .results .wrap .samp .branch {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 17px; }
+        .results .wrap .samp .branch span {
+          color: #da202c; }
+      .results .wrap .samp .icons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 15px;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+        .results .wrap .samp .icons .icon {
+          font-size: 15px;
+          border: 1px solid #da202c;
+          color: #da202c;
+          border-radius: 50%;
+          padding: 4px 7px;
+          display: inline-block;
+          margin-left: 10px;
+          -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out; }
+          .results .wrap .samp .icons .icon:hover {
+            color: #fff;
+            background: #da202c; }
+
+footer {
+  position: absolute;
+  left: 0;
+  border-top: 1px solid #eee;
+  padding-top: 30px; }
+  footer .logo {
+    text-decoration: none; }
+    footer .logo .txt {
+      padding: 0;
+      margin-right: 10px; }
+      footer .logo .txt .col-12 {
+        font-weight: bold;
+        font-size: 22px;
+        letter-spacing: 1px; }
+        footer .logo .txt .col-12 span {
+          font-weight: normal;
+          font-size: 15px;
+          letter-spacing: 0; }
+  footer h6 {
+    font-size: 18px; }
+  footer a {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #000; }
+    footer a:hover {
+      color: #da202c; }
+  footer .info .row {
+    padding-left: 15px; }
+  @media (max-width: 768px) {
+    footer .contact {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  footer .contact a {
+    font-size: 19px;
+    margin-left: 2%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #da202c;
+    text-decoration: none;
+    color: #da202c;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    footer .contact a:first-child {
+      margin: 0;
+      padding: 10px 15px; }
+    footer .contact a:last-child, footer .contact a:nth-last-of-type(2) {
+      padding: 10px 12px; }
+    footer .contact a:hover {
+      background: #da202c;
+      color: #fff; }
+
+.btn,
+input {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none; }
+
+/*# sourceMappingURL=style.css.map */

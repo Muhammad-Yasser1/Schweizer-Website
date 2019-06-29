@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif; }
+  body .container-fluid {
+    padding-left: 4%;
+    padding-right: 4%; }
+
+.navbar {
+  padding: 0;
+  margin: 0; }
+  @media (max-width: 768px) {
+    .navbar .container-fluid {
+      width: 100% !important; } }
+  .navbar .navbar-toggler {
+    margin-right: 20px;
+    background: #da202c;
+    padding: 10px 18px;
+    font-size: 19px; }
+    .navbar .navbar-toggler-icon {
+      color: #fff; }
+  .navbar:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    background: #ddd;
+    height: 1px;
+    width: 100%; }
+    @media (max-width: 768px) {
+      .navbar:after {
+        display: none; } }
+  .navbar .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 280px; }
+    @media (max-width: 768px) {
+      .navbar .navbar-brand {
+        min-width: 180px; } }
+    .navbar .navbar-brand .txt {
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      font-size: 23px;
+      letter-spacing: 1px;
+      margin: 0;
+      padding: 0; }
+      .navbar .navbar-brand .txt * {
+        display: block; }
+  .navbar .row {
+    padding: 0;
+    margin: 0; }
+    .navbar .row .upper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding-left: 25px;
+      font-weight: 500;
+      font-size: 15px;
+      padding-top: 3px; }
+      @media (max-width: 768px) {
+        .navbar .row .upper {
+          margin-left: 40%;
+          margin-top: 20px;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; } }
+      .navbar .row .upper a {
+        padding-bottom: 3px;
+        color: #000; }
+        .navbar .row .upper a:hover {
+          color: #da202c; }
+    .navbar .row .navbar-nav {
+      margin-top: 10px; }
+      .navbar .row .navbar-nav .nav-item {
+        margin-right: 5%;
+        padding: 5px 0; }
+        @media (max-width: 790px) {
+          .navbar .row .navbar-nav .nav-item {
+            margin-right: 2%; } }
+        .navbar .row .navbar-nav .nav-item .nav-link {
+          position: relative;
+          top: 8px;
+          color: #000;
+          padding: 10px 20px;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 1px; }
+          @media (max-width: 768px) {
+            .navbar .row .navbar-nav .nav-item .nav-link {
+              padding: 10px 0 10px 10px; } }
+          .navbar .row .navbar-nav .nav-item .nav-link:after {
+            content: "";
+            z-index: 1;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            background: #da202c;
+            height: 3px;
+            width: 0;
+            -webkit-transition: width .2s ease-in-out;
+            transition: width .2s ease-in-out; }
+          .navbar .row .navbar-nav .nav-item .nav-link:hover:after {
+            width: 100%; }
+          @media (max-width: 992px) {
+            .navbar .row .navbar-nav .nav-item .nav-link:hover:after {
+              width: 35%; } }
+
+header .panel {
+  position: relative; }
+  header .panel:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  header .panel .img-fluid {
+    position: relative;
+    z-index: 0; }
+  header .panel .caption {
+    letter-spacing: 3px;
+    z-index: 1;
+    position: absolute;
+    top: 48%;
+    left: 5%;
+    font-weight: bold;
+    color: #fff;
+    max-width: 500px; }
+
+section {
+  padding-bottom: 90px; }
+  section .title {
+    color: #da202c;
+    letter-spacing: 2px;
+    padding: 3% 0;
+    text-align: center; }
+  section .main .card {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+    border: none; }
+    section .main .card .card-header {
+      background: #f7f7f7;
+      border: none;
+      max-width: 800px; }
+      section .main .card .card-header .card-link {
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px; }
+        @media (max-width: 768px) {
+          section .main .card .card-header .card-link {
+            font-size: 12px; } }
+        section .main .card .card-header .card-link:hover {
+          color: #da202c; }
+    section .main .card .card-body p {
+      font-size: 15px;
+      letter-spacing: .5px; }
+      @media (max-width: 768px) {
+        section .main .card .card-body p {
+          font-size: 12px; } }
+
+footer {
+  position: absolute;
+  left: 0;
+  border-top: 1px solid #eee;
+  padding-top: 30px; }
+  footer .logo {
+    text-decoration: none; }
+    footer .logo .txt {
+      padding: 0;
+      margin-right: 10px; }
+      footer .logo .txt .col-12 {
+        font-weight: bold;
+        font-size: 22px;
+        letter-spacing: 1px; }
+        footer .logo .txt .col-12 span {
+          font-weight: normal;
+          font-size: 15px;
+          letter-spacing: 0; }
+  footer h6 {
+    font-size: 18px; }
+  footer a {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #000; }
+    footer a:hover {
+      color: #da202c; }
+  footer .info .row {
+    padding-left: 15px; }
+  @media (max-width: 768px) {
+    footer .contact {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  footer .contact a {
+    font-size: 19px;
+    margin-left: 2%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #da202c;
+    text-decoration: none;
+    color: #da202c;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    footer .contact a:first-child {
+      margin: 0;
+      padding: 10px 15px; }
+    footer .contact a:last-child, footer .contact a:nth-last-of-type(2) {
+      padding: 10px 12px; }
+    footer .contact a:hover {
+      background: #da202c;
+      color: #fff; }
+
+/*# sourceMappingURL=faq.css.map */

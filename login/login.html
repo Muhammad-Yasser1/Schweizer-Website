@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Login &amp; Rigister</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Andreas">
+	<link rel="shortcut icon" href="imgs/logo-foot.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+	<!--	Start Navabar-->
+	<nav class="navbar navbar-expand-md navbar-light">
+		<div class="container-fluid">
+			<a class="navbar-brand py-3 row bg-danger" href="../index.html" style="padding-right: 15px;">
+					<span class="swis col-4 p-1 pr-0"><img src="imgs/logo.png" class="img-fluid" alt="swiss"></span>
+					<span class="txt col-7 small">SCHWEIZER.<span style="font-size: 16px;font-weight: normal">FIRMENADRESSEN</span></span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon fas fa-align-justify"></span>
+         </button>
+			<div class="row pl-2 col-9">
+
+				<div class="upper col-11">
+					<i class="text-danger far fa-user" style="font-size: 22px"></i>&nbsp;&nbsp;
+					<a href="login.html"> LOGIN </a>&nbsp; / &nbsp;<a href="login.html#register"  id="reg">REGISTER</a>
+				</div>
+				<div class="collapse col-12 navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="../index.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../faq/faq.html">FAQ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../contact/contact.html">CONTACT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../about/about.html">ABOUT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--	End Navabar-->
+
+
+	<!--	Start header-->
+	<header class="mt-4">
+
+		<div class="container-fluid">
+			<div class="panel">
+				<img src="imgs/panel2.png" class="w-100" alt="swissPanel">
+				<div class="caption">LOGIN &amp; REGISTERATION</div>
+				<div class="row">
+					<div class="container-fluid">
+
+						<div class="col-10 col-lg-6 left" action="" method="post" enctype="multipart/form-data">
+							<h5>
+								ARE YOU ALREADY A CLIENT?
+								<div class="small" style="line-height: 1.5">Please enter your login data here.</div>
+							</h5>
+
+							<div class="options row">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs col-8">
+
+									<li class="nav-item">
+										<a class="nav-link active" data-toggle="tab" href="#login">LOGIN</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="up" data-toggle="tab" href="#register">REGISTER</a>
+									</li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content col-12">
+									<div class="tab-pane fade container  active show" id="login">
+										<form action="" method="post" enctype="multipart/form-data">
+											<div class="row">
+
+												<div class="form-group col-12">
+													<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+													<span class="icon"><i class="fas fa-user"></i></span>
+												</div>
+
+												<div class="form-group col-12">
+													<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+													<span class="icon"><i class="fas fa-lock"></i></span>
+												</div>
+
+												<div class="col-12 rem">
+													<div class="row">
+														<div class="col-md-6 form-check">
+															<label class="container">REMEMBER PASSWORD
+																<input type="checkbox">
+																<span class="checkmark"></span>
+															</label>
+														</div>
+														<div class="forget col-md-6">
+															<a href="">FORGET YOUR PASSWORD?</a>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-12">
+													<button type="submit" class="btn btn-primary">LOGIN</button>
+												</div>
+
+												<div class="col-12 dont">
+													DON'T HAVE AN ACCOUNT? YOU CAN RESISTER NOW:<br>
+
+													<ul class="nav nav-tabs col-8 border-0 pt-1 ml-0">
+														<li class="nav-item">
+															<a href="#register" data-toggle="tab" class="act">CREATE AN ACCOUNT</a>
+														</li>
+													</ul>
+
+												</div>
+											</div>
+										</form>
+
+									</div>
+									<div class="tab-pane fade container row" id="register">
+
+										<p class="col-12">
+											The registration of your personal account is completely free and without obligation and allows the storage of your queries, and - if desired - the download of your address list.
+										</p>
+
+										<form action="" class="row col-12">
+
+											<div class="sel col-12">
+												<div class="arrow">
+													<span class="down"><i class="fas fa-angle-down"></i></span>
+													<span class="up"><i class="fas fa-angle-up"></i></span>
+												</div>
+												<select name="" id="">
+													<option value="" class="p-2">GENDER</option>
+													<option value="">MALE</option>
+													<option value="">FEMALE</option>
+												</select>
+											</div>
+
+											<div class="ins col-12">
+												<div class="row">
+													<div class="col-md-6"><input class="col-12" type="text" placeholder="FIRST NAME"></div>
+													<div class="col-md-6"><input class="col-12" type="text" placeholder="LAST NAME"></div>
+													<div class="col-md-6"><input class="col-12" type="number" placeholder="PHONE"></div>
+													<div class="col-md-6"><input class="col-12" type="mail" placeholder="EMAIL"></div>
+													<div class="col-md-6"><input class="col-12" type="text" placeholder="COMPANY NAME"></div>
+													<div class="col-md-6"><input class="col-12" type="text" placeholder="STREET & NUMBER"></div>
+													<div class="col-md-3"><input class="col-12 pr-0" type="number" placeholder="POSTAL"></div>
+													<div class="col-md-3"><input class="col-12 pr-0" type="text" placeholder="PLACE"></div>
+													<div class="sel col-md-6 mt-0">
+														<div class="arrow" style="z-index: 5;left: 115px;top:27px;">
+															<span class="down"><i class="fas fa-angle-down"></i></span>
+															<span class="up"><i class="fas fa-angle-up"></i></span>
+														</div>
+														<select class="col-12" name="" id="" style="padding-top: 16px;padding-bottom: 12px;">
+															<option value="" class="p-2">COUNTRY</option>
+															<option value="">MALE</option>
+															<option value="">FEMALE</option>
+														</select>
+													</div>
+													<div class="col-md-6"><input class="col-12" type="url" placeholder="WEBSITE"></div>
+													<div class="col-md-6"><input class="col-12" type="number" placeholder="UID"></div>
+													<div class="col-md-6"><input class="col-12" type="password" placeholder="PASSWORD"></div>
+													<div class="col-md-6"><input class="col-12" type="password" placeholder="CONFIRM PASSWORD"></div>
+
+													<div class="col-12">
+														<label class="container col-12 pt-1">I accept the terms and conditions that apply 		to all future orders through the schweizer address shop.*
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+													</div>
+
+													<div class="col-12">
+														<input class="btn btn-danger" type="submit" role="button" value="REGISTER NOW">
+													</div>
+												</div>
+											</div>
+
+										</form>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<!--	End header-->
+
+
+	<!--Start Footer-->
+	<footer class="col-12">
+		<div class="row">
+			<div class="container-fluid">
+				<div class="row col-12">
+					<a href="../index.html" class="logo col-8 col-sm-6 col-lg-4 pl-1 mb-3 row justify-content-center d-flex
+					align-items-center">
+						<div class="col-5">
+							<img src="imgs/logo-foot.png" alt="swiss" class="img-fluid">
+						</div>
+						<div class="txt col-6 row">
+							<div class="col-12 text-danger">Schweizer <br><span>FIRMENDRESSEN</span></div>
+						</div>
+					</a>
+					<div class="links col-6 col-sm-3 col-lg-2 mb-3">
+						<h6 class="text-danger">LINKS</h6>
+						<div class="list-group">
+							<a href="#">Branche</a>
+							<a href="#">BetriebsGRöße</a>
+							<a href="#">Region</a>
+							<a href="#">Führungskräfte</a>
+						</div>
+					</div>
+					<div class="info col-6 col-sm-3 col-lg-2 mb-3">
+						<h6 class="text-danger">INFO</h6>
+						<div class="list-group">
+							<a href="#" class="row">About Schweizer</a>
+							<a href="#">Terms of use</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Imprint</a>
+						</div>
+					</div>
+					<div class="contact col-12 col-lg-4 mt-md-3 ">
+						<div class="row justify-content-center ml-3 mx-sm-auto">
+							<h6 class="text-danger d-none d-lg-block col-12  text-center">KEEP IN TOUCH</h6>
+							<div class="list-group-inline d-flex justify-content-around">
+								<a href="#" class="">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+								<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+								<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
+								<a href="#">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-danger mt-4 col-12 d-flex align-items-center justify-content-center">
+				<p class="m-3 text-white" style="font-size: 16px;font-weight: bold;letter-spacing: 1px">
+					&copy; COPYRIGHT 2018 SCHWEIZER FIRMENDRESSEN. ALL RIGHTS RESERVED
+				</p>
+			</div>
+
+		</div>
+	</footer>
+	<!--End Footer-->
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/fontawesome-all.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/login.js"></script>
+</body>
+
+</html>
